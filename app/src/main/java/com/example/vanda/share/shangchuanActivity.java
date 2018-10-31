@@ -3,7 +3,7 @@ package com.example.vanda.share;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class shangchuanActivity extends AppCompatActivity {
+public class ShangChuanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

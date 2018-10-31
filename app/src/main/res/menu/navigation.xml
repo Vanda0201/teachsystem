@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shouye"
+        android:icon="@drawable/homepage"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_shangcheng"
+        android:icon="@drawable/shopping"
+        android:title="@string/title_shop" />
+
+    <item
+        android:id="@+id/navigation_wode"
+        android:icon="@drawable/personal"
+        android:title="@string/title_person" />
+
+</menu>

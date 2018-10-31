@@ -9,22 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ziyuanxiangqing" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ziyuanxiangqing">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
-        <activity android:name=".Shangpinxiangqing"/>
-
+        <activity android:name=".Shangpinxiangqing" />
         <activity android:name=".fabuActivity" />
-        <activity android:name=".kaozhengActivity" />
-        <activity android:name=".FirstActivity" />
+        <activity android:name=".KaoZhengActivity" />
+        <activity android:name=".ShangChuanActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".shangchuanActivity"></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
