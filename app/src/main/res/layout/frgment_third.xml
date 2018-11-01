@@ -13,9 +13,9 @@
 
 
     <TextView
-        android:id="@+id/wodeshoucang"
+        android:id="@+id/collection"
         android:layout_width="368dp"
-        android:layout_height="45dp"
+        android:layout_height="29dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="8dp"
@@ -28,28 +28,24 @@
     <TextView
         android:id="@+id/wodejifen"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="我的积分"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wodeshoucang" />
+        app:layout_constraintTop_toBottomOf="@+id/collection" />
 
     <TextView
         android:id="@+id/wodefabu"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="我的发布"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,12 +55,10 @@
     <TextView
         android:id="@+id/wodehsngchuan"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="我的上传"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +68,7 @@
     <TextView
         android:id="@+id/wodexiazai"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -129,7 +123,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="ID:"
-        app:layout_constraintBottom_toTopOf="@+id/wodeshoucang"
+        app:layout_constraintBottom_toTopOf="@+id/collection"
         app:layout_constraintEnd_toStartOf="@+id/shezhi"
         app:layout_constraintStart_toEndOf="@+id/touxiang"
         app:layout_constraintTop_toBottomOf="@+id/nichen" />

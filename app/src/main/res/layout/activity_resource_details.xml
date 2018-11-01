@@ -14,22 +14,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="8dp">
-            <Button
-                android:id="@+id/Return"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/fanhui" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:gravity="center_horizontal"
-                android:text="资源详情"
-                android:textSize="20dp"
-                android:textStyle="normal" />
+            <include
+                android:id="@+id/resource"
+                layout="@layout/resource_details_header"/>
         </RelativeLayout>
 
         <LinearLayout

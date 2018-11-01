@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fabuActivity">
-
+    tools:context=".PublishActivity">
+    <include
+        android:id="@+id/publishheader"
+        layout="@layout/publish_header"/>
     <Button
         android:id="@+id/fabu"
         android:layout_width="370dp"
@@ -33,16 +35,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/woyaofabu"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="我要发布"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="8dp" />
 
     <Button
         android:id="@+id/tianjiatupian"
@@ -105,16 +97,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/fanhui"
-        app:layout_constraintEnd_toStartOf="@+id/woyaofabu"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="8dp" />
 </android.support.constraint.ConstraintLayout>
 
 

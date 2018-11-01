@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shangpinxiangqing"
+    tools:context=".Goods_detailsActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,25 +15,11 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/Return"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="8dp"
-                android:background="@drawable/fanhui" />
-
-            <TextView
-                android:id="@+id/Shangpin"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="商品详情"
-                android:textSize="20sp"
-                android:textStyle="normal" />
+            android:layout_height="wrap_content"
+            >
+            <include
+                android:id="@+id/goods_details"
+                layout="@layout/goods_details_header"/>
         </RelativeLayout>
 
         <LinearLayout

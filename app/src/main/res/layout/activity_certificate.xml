@@ -4,29 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KaoZhengActivity">
+    tools:context=".CertificateActivity">
 
-    <Button
-        android:id="@+id/imageButton3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/fanhui"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/wodeshoucang"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="考证"
-        android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/certificate"
+        layout="@layout/certificate_header"/>
 
     <SearchView
         android:layout_width="0dp"
