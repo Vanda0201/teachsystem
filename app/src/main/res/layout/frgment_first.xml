@@ -9,8 +9,11 @@
 
     <SearchView
         android:id="@+id/serach_view"
-        android:layout_width="344dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,6 +95,8 @@
         app:layout_constraintEnd_toStartOf="@+id/serach_view"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/share" />
 

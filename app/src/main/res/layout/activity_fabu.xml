@@ -40,17 +40,17 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="我要发布"
-        android:textSize="18sp" />
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <Button
         android:id="@+id/tianjiatupian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="添加图片"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,11 +109,12 @@
         android:id="@+id/button2"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/fanhui"
         app:layout_constraintEnd_toStartOf="@+id/woyaofabu"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="8dp" />
 </android.support.constraint.ConstraintLayout>
 
 
