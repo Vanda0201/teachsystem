@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class CertificateActivity extends AppCompatActivity {
 
@@ -12,7 +13,7 @@ public class CertificateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificate);
        //从该activity跳转回首页的fragment
-        Button backBtn = (Button)findViewById(R.id.certificate);
+        ImageView backBtn = (ImageView) findViewById(R.id.certificateback);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
