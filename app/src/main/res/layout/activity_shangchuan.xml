@@ -10,10 +10,11 @@
     <TextView
         android:id="@+id/woyaoshangchuan"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="我要上传"
-       android:gravity="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +44,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginBottom="22dp"
         android:ems="10"
 
@@ -51,7 +51,8 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/xuanzefenlei"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/quedingshangchuan"
@@ -71,9 +72,8 @@
         android:id="@+id/xuanzefenlei"
         android:layout_width="188dp"
         android:layout_height="47dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="56dp"
         android:text="选择分类"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -82,8 +82,8 @@
         android:id="@+id/button"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/fanhui"
         app:layout_constraintEnd_toStartOf="@+id/woyaoshangchuan"
         app:layout_constraintHorizontal_bias="0.0"
