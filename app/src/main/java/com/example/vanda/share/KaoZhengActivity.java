@@ -13,6 +13,7 @@ public class KaoZhengActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kaozheng);
+       //从该activity跳转回首页的fragment
         Button backBtn = (Button)findViewById(R.id.imageButton3);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -20,10 +21,7 @@ public class KaoZhengActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
     }
-
     }
 
 

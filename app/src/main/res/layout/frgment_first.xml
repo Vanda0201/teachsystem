@@ -7,13 +7,9 @@
 
     tools:layout_editor_absoluteY="81dp">
 
-    <SearchView
-        android:id="@+id/serach_view"
-        android:layout_width="344dp"
-        android:layout_height="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <include
+        android:id="@+id/firstheader"
+        layout="@layout/first_header"/>
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="100dp"
@@ -84,16 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/exame" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/serach_view"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/share" />
 
     <ImageView
         android:id="@+id/imageView25"
