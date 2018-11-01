@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="share_blue" parent="android:Theme.Material.Light" >
+        <item name="android:colorAccent">@color/accent_material_light_1</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
 </resources>
