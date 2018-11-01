@@ -36,13 +36,11 @@
 
     <TextView
         android:id="@+id/woyaofabu"
-        android:layout_width="344dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
         android:text="我要发布"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/tianjiatupian"
@@ -115,7 +113,7 @@
         app:layout_constraintEnd_toStartOf="@+id/woyaofabu"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>
 
 

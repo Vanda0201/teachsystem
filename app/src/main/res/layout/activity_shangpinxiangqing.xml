@@ -17,21 +17,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
             <Button
                 android:id="@+id/Return"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:background="@drawable/fanhui" />
 
             <TextView
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_width="0dp"
-                android:layout_weight="9"
+                android:gravity="center"
                 android:text="商品详情"
-                android:gravity="center_horizontal"
-                android:textStyle="normal"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="normal" />
         </LinearLayout>
 
         <LinearLayout
