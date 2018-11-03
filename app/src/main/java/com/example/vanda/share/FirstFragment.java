@@ -5,11 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,7 +28,7 @@ public class FirstFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.frgment_first, container, false);
         view = inflater.inflate(R.layout.frgment_first,container,false);
-        ImageView kaozhengimage = view.findViewById(R.id.zhengshu);
+        LinearLayout kaozhengimage = view.findViewById(R.id.zhengshu);
         ImageButton shangchuan =view.findViewById(R.id.uploadbutton);
 
         kaozhengimage.setOnClickListener(new View.OnClickListener() {
