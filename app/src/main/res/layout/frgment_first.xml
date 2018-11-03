@@ -1,235 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="81dp">
-
-    <include
-        android:id="@+id/firstheader"
-        layout="@layout/first_header"/>
-
+    tools:layout_editor_absoluteY="81dp"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
     <LinearLayout
-        android:id="@+id/exam"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/background_border">
-        <ImageView
-            android:id="@+id/img_exam"
-            android:layout_width="100dp"
-            android:layout_height="55dp"
-            app:srcCompat="@drawable/kaoshi"
-            android:layout_gravity="center"/>
+        android:background="@drawable/background">
+        <include
+            android:id="@+id/firstheader"
+            layout="@layout/first_header" />
 
-        <TextView
-            android:id="@+id/text_exam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="考试"
-            android:layout_gravity="center"/>
-    </LinearLayout>
+        <!--轮播图-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
 
-    <LinearLayout
-        android:id="@+id/audiovisual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/social_exam"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/art_sport"
-        app:layout_constraintTop_toBottomOf="@+id/kaoyan"
-        android:background="@drawable/background_border">
-        <ImageView
-            android:id="@+id/img_audiovisual"
-            android:layout_width="100dp"
-            android:layout_height="56dp"
+        <!--轮播图指示点-->
+        <LinearLayout
+            android:id="@+id/viewdot"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/yingshijiaocai" />
-
-        <TextView
-            android:id="@+id/text_audiovisual"
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="影音"
-            android:layout_gravity="center"/>
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/zhengshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_zhengshu"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/img_certificate" />
+
+                    <TextView
+                        android:id="@+id/text_zhengshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="证书" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_exam"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/img_exam" />
+
+                    <TextView
+                        android:id="@+id/text_exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="考试" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/postgraduate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_postgraduate"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/img_postgraduate" />
+
+                    <TextView
+                        android:id="@+id/text_postgraduate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="考研" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                    <LinearLayout
+                        android:id="@+id/art_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+                        <ImageView
+                            android:id="@+id/img_art_sport"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/img_art_sport"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/text_art_sport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="艺术和体育"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/audiovisual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/img_audiovisual"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/img_audiovisual" />
+
+                    <TextView
+                        android:id="@+id/text_audiovisual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="影音"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/social_exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF">
+                        <ImageView
+                            android:id="@+id/img_social_exam"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/img_social_exam"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/text_social_exam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="社会考试"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/express"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/img_express"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/img_express" />
+                    <TextView
+                        android:id="@+id/text_express"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快递帮"
+                        android:gravity="top"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/job"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/img_job"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/img_job" />
+                    <TextView
+                        android:id="@+id/text_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找兼职"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/life"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <ImageView
+                            android:id="@+id/img_life"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/img_life" />
+                        <TextView
+                            android:id="@+id/text_life"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="生活周边"
+                            android:gravity="top"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/news"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/img_news"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/img_news" />
+                    <TextView
+                        android:id="@+id/text_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="你造吗？"
+                        android:layout_gravity="top"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/first_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/kaoyan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/exam"
-        app:layout_constraintStart_toEndOf="@+id/zhengshu"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/background_border">
-        <ImageView
-            android:id="@+id/img_kaoyan"
-            android:layout_width="100dp"
-            android:layout_height="56dp"
-            app:srcCompat="@drawable/pages"
-            android:layout_gravity="center"/>
 
-        <TextView
-            android:id="@+id/text_kaoyan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="考研"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/art_sport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zhengshu"
-        android:background="@drawable/background_border">
-        <ImageView
-            android:id="@+id/img_art_sport"
-            android:layout_width="100dp"
-            android:layout_height="56dp"
-            app:srcCompat="@drawable/wangqiu"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/text_art_sport"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="艺术和体育"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/social_exam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exam"
-        android:background="@drawable/background_border">
-        <ImageView
-            android:id="@+id/img_social_exam"
-            android:layout_width="100dp"
-            android:layout_height="56dp"
-            app:srcCompat="@drawable/kaoshizuoda"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/text_social_exam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="社会考试"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/zhengshu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="124dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/background_border">
-
-        <ImageView
-            android:id="@+id/img_zhengshu"
-            android:layout_width="100dp"
-            android:layout_height="56dp"
-            app:srcCompat="@drawable/exame" />
-
-        <TextView
-            android:id="@+id/text_zhengshu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="证书"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="113dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="332dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
-        app:srcCompat="@drawable/xinwen" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="113dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="304dp"
-        android:layout_marginEnd="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/jianzhi" />
-
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="113dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="304dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView26"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kauidi" />
-
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="113dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="360dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shenghuo" />
-
-    <ImageButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/uploadbutton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/tianjia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/img_add"
+        app:backgroundTint="#87CEFA"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:rippleColor="#33728dff" />
 
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>

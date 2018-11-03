@@ -8,12 +8,12 @@
 
     <item
         android:id="@+id/navigation_shangcheng"
-        android:icon="@drawable/shopping"
+        android:icon="@drawable/img_shopping"
         android:title="@string/title_shop" />
 
     <item
         android:id="@+id/navigation_wode"
-        android:icon="@drawable/personal"
+        android:icon="@drawable/img_personal"
         android:title="@string/title_person" />
 
 </menu>
