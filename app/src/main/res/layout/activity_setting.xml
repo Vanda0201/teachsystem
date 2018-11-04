@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <include
+        android:id="@+id/setting_header"
+        layout="@layout/header_setting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/view_nick_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="  昵称"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/edit_nick_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:maxLines="1"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/view_a"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="  a"
+                android:textSize="24sp"
+                android:background="#ffffff"/>
+            <EditText
+                android:id="@+id/edit_a"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:maxLines="1"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/view_b"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="  b"
+                android:textSize="24sp"
+                android:background="#ffffff"/>
+            <EditText
+                android:id="@+id/edit_b"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:maxLines="1"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/collection"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="  c"
+                android:textSize="24sp"
+                android:background="#ffffff"/>
+            <EditText
+                android:id="@+id/edit_c"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:maxLines="1"
+                android:background="@null"/>
+        </LinearLayout>
+
+<Button
+    android:id="@+id/save"
+    android:text="保存"
+    android:layout_margin="15dp"
+    android:textAlignment="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_b_login"/>
+
+    </LinearLayout>
+</LinearLayout>

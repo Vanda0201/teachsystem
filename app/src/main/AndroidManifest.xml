@@ -31,7 +31,8 @@
         <activity android:name=".MyPublish" />
         <activity android:name=".MyUpload" />
         <activity android:name=".MyDownload" />
-        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".ContactUs" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>
