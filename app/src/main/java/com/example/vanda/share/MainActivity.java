@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        //appy运行指定首画面
+        //app运行指定首画面
         navigation.setSelectedItemId(R.id.navigation_shouye);
     }
 

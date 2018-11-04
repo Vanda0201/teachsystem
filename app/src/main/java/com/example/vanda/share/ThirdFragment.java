@@ -31,10 +31,10 @@ public class ThirdFragment extends Fragment {
         collection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Util.isLogin(getContext())) {
+               if (Util.isLogin(getContext())) {
                     startActivity(new Intent(getContext(), CollectionActivity.class));
                 } else {
-                    startActivity(new Intent(getContext(), LoginActivity.class));
+                   startActivity(new Intent(getContext(), LoginActivity.class));
                 }
 
             }
