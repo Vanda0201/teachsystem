@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -21,6 +22,14 @@ public class RegisterActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = getSharedPreferences("user",MODE_PRIVATE).edit();
                 editor.putString("user_name","Logged");
                 editor.apply();
+            }
+        });
+        //返回键
+        ImageView registerback = (ImageView) findViewById(R.id.title_back);
+        registerback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

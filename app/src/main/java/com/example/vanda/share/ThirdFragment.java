@@ -28,6 +28,11 @@ public class ThirdFragment extends Fragment {
         View view = inflater.inflate(R.layout.frgment_third, container, false);
 
         TextView collection = view.findViewById(R.id.collection);
+        TextView publish = view.findViewById(R.id.publish);
+        TextView upload = view.findViewById(R.id.upload);
+        TextView download = view.findViewById(R.id.download);
+        TextView contactus = view.findViewById(R.id.contact_us);
+
         collection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +44,64 @@ public class ThirdFragment extends Fragment {
 
             }
         });
+
+        publish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Util.isLogin(getContext())) {
+                    startActivity(new Intent(getContext(), MyPublish.class));
+                } else {
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+
+            }
+        });
+
+        download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Util.isLogin(getContext())) {
+                    startActivity(new Intent(getContext(), MyDownload.class));
+                } else {
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+
+            }
+        });
+
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Util.isLogin(getContext())) {
+                    startActivity(new Intent(getContext(), MyUpload.class));
+                } else {
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+
+            }
+        });
+
+        contactus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Util.isLogin(getContext())) {
+                    startActivity(new Intent(getContext(), ContactUs.class));
+                } else {
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+
+            }
+        });
+
+
+
+
+
+
+
+
+
+
         return view;
     }
 

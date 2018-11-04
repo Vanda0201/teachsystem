@@ -80,31 +80,31 @@
 
 
         <TextView
-            android:id="@+id/wodefabu"
+            android:id="@+id/publish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
             android:text="  我的发布"
-            android:textSize="24sp"
-            android:layout_marginTop="5dp"
-            android:background="#ffffff"/>
+            android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wodehsngchuan"
+            android:id="@+id/upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
             android:text="  我的上传"
-            android:textSize="24sp"
-            android:layout_marginTop="5dp"
-            android:background="#ffffff"/>
+            android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/wodexiazai"
+            android:id="@+id/download"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  我的下载"
-            android:textSize="24sp"
             android:layout_marginTop="5dp"
-            android:background="#ffffff"/>
+            android:background="#ffffff"
+            android:text="  我的下载"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/contact_us"

@@ -6,6 +6,7 @@ package com.example.vanda.share;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.ImageView;
         import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
@@ -32,5 +33,14 @@ public class LoginActivity extends AppCompatActivity {
                 editor.apply();
             }
         });
+        //返回键
+        ImageView loginback = (ImageView) findViewById(R.id.title_back);
+        loginback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 }
