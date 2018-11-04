@@ -14,7 +14,6 @@
         android:id="@+id/contact_information"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="QQ:\n微信："
+        android:text="官方QQ:\n\n官方微信公众号："
         android:textSize="24sp" />
-
 </LinearLayout>
