@@ -18,7 +18,7 @@
             android:layout_height="wrap_content">
             <include
                 android:id="@+id/goods_details"
-                layout="@layout/goods_details_header"/>
+                layout="@layout/header_goods_details"/>
         </RelativeLayout>
 
         <LinearLayout

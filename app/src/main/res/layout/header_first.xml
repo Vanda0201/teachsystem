@@ -14,7 +14,9 @@
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:showDividers="beginning"
+        android:queryHint="请输入"/>
 
     </RelativeLayout>
 </RelativeLayout>
