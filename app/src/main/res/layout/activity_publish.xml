@@ -7,7 +7,7 @@
     tools:context=".PublishActivity">
     <include
         android:id="@+id/publishheader"
-        layout="@layout/publish_header"/>
+        layout="@layout/header_publish"/>
     <Button
         android:id="@+id/fabu"
         android:layout_width="370dp"

@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/resource"
-        layout="@layout/resource_details_header"/>
+        layout="@layout/header_resource_details"/>
 
     <TextView
         android:id="@+id/resource_title"

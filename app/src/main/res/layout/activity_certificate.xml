@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/certificate_header"
-        layout="@layout/certificate_header"/>
+        layout="@layout/header_certificate"/>
 
     <SearchView
         android:id="@+id/search_certificate"
