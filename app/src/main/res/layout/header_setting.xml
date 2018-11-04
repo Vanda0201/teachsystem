@@ -40,6 +40,9 @@
             android:layout_alignTop="@+id/titleText"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="8dp"
-            android:text="实名认证" />
+            android:text="实名认证"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
     </RelativeLayout>
 </RelativeLayout>

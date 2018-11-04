@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -28,11 +29,11 @@ public class ThirdFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.frgment_third, container, false);
 
-        TextView collection = view.findViewById(R.id.collection);
-        TextView publish = view.findViewById(R.id.publish);
-        TextView upload = view.findViewById(R.id.upload);
-        TextView download = view.findViewById(R.id.download);
-        TextView contactus = view.findViewById(R.id.contact_us);
+        LinearLayout collection = view.findViewById(R.id.collection);
+        LinearLayout publish = view.findViewById(R.id.publish);
+        LinearLayout upload = view.findViewById(R.id.upload);
+        LinearLayout download = view.findViewById(R.id.download);
+        LinearLayout contactus = view.findViewById(R.id.contact_us);
         ImageView settings = view.findViewById(R.id.settings);
 
         collection.setOnClickListener(new View.OnClickListener() {

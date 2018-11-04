@@ -39,7 +39,8 @@
             android:layout_height="0dp"
             android:layout_weight="3.5"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="#ffffff">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +65,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="证书" />
+                        android:text="证书"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -86,7 +88,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="考试" />
+                        android:text="考试"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
 
@@ -109,7 +112,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="考研" />
+                        android:text="考研"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -135,6 +139,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="艺术和体育"
+                            android:textColor="@color/black"
                             android:layout_gravity="center"/>
                     </LinearLayout>
 
@@ -156,6 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="影音"
+                        android:textColor="@color/black"
                         android:layout_gravity="center"/>
                 </LinearLayout>
 
@@ -177,6 +183,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="社会考试"
+                            android:textColor="@color/black"
                             android:layout_gravity="center"/>
                     </LinearLayout>
             </LinearLayout>
@@ -185,7 +192,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -207,6 +215,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="快递帮"
+                        android:textColor="@color/black"
                         android:gravity="top"
                         android:background="#ffffff"/>
                 </LinearLayout>
@@ -224,7 +233,8 @@
                         android:id="@+id/text_job"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="找兼职"/>
+                        android:text="找兼职"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -248,6 +258,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="生活周边"
+                            android:textColor="@color/black"
                             android:gravity="top"/>
                 </LinearLayout>
                 <LinearLayout
@@ -265,6 +276,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="你造吗？"
+                        android:textColor="@color/black"
                         android:layout_gravity="top"/>
                 </LinearLayout>
             </LinearLayout>
