@@ -7,12 +7,13 @@
     tools:layout_editor_absoluteY="81dp"
     android:background="#EEEEEE"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@drawable/background"
-        >
+        android:orientation="vertical">
+
         <include
             android:id="@+id/firstheader"
             layout="@layout/header_first" />
@@ -21,25 +22,27 @@
         <com.example.vanda.share.ImageSlideshow
             android:id="@+id/is_gallery"
             android:layout_width="match_parent"
-            android:layout_height="212dp"/>
+            android:layout_height="212dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3.5"
-            android:orientation="vertical"
+            android:background="#ffffff"
             android:gravity="center"
-            android:background="#ffffff">
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/zhengshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
@@ -47,7 +50,7 @@
                         android:id="@+id/img_zhengshu"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
-                        app:srcCompat="@drawable/img_certificate" />
+                        app:srcCompat="@drawable/img_zhengshu" />
 
                     <TextView
                         android:id="@+id/text_zhengshu"
@@ -55,13 +58,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="证书"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/exam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
@@ -78,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="考试"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
 
@@ -86,6 +91,7 @@
                     android:id="@+id/postgraduate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
@@ -102,42 +108,48 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="考研"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                    <LinearLayout
-                        android:id="@+id/art_sport"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/art_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_art_sport"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/img_art_sport" />
+
+                    <TextView
+                        android:id="@+id/text_art_sport"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="#FFFFFF">
-                        <ImageView
-                            android:id="@+id/img_art_sport"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/img_art_sport"
-                            android:layout_gravity="center"/>
-
-                        <TextView
-                            android:id="@+id/text_art_sport"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="艺术和体育"
-                            android:textColor="@color/black"
-                            android:layout_gravity="center"/>
-                    </LinearLayout>
+                        android:layout_gravity="center"
+                        android:text="体艺"
+                        android:textColor="@color/black" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/audiovisual"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="#FFFFFF">
+                    android:layout_gravity="center"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/img_audiovisual"
                         android:layout_width="100dp"
@@ -149,81 +161,91 @@
                         android:id="@+id/text_audiovisual"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:text="影音"
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/social_exam"
+                <LinearLayout
+                    android:id="@+id/social_exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_social_exam"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/img_social_exam" />
+
+                    <TextView
+                        android:id="@+id/text_social_exam"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="#FFFFFF">
-                        <ImageView
-                            android:id="@+id/img_social_exam"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/img_social_exam"
-                            android:layout_gravity="center"/>
-
-                        <TextView
-                            android:id="@+id/text_social_exam"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="社会考试"
-                            android:textColor="@color/black"
-                            android:layout_gravity="center"/>
-                    </LinearLayout>
+                        android:layout_gravity="center"
+                        android:text="社会考试"
+                        android:textColor="@color/black" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="12dp"
             android:layout_weight="3"
-            android:orientation="vertical"
-            android:layout_marginTop="12dp">
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <LinearLayout
                     android:id="@+id/express"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="#FFFFFF">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:id="@+id/img_express"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_express" />
+
                     <TextView
                         android:id="@+id/text_express"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="快递帮"
-                        android:textColor="@color/black"
+                        android:background="#ffffff"
                         android:gravity="top"
-                        android:background="#ffffff"/>
+                        android:text="快递帮"
+                        android:textColor="@color/black" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/job"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF">
+
                     <ImageView
                         android:id="@+id/img_job"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_job" />
+
                     <TextView
                         android:id="@+id/text_job"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="找兼职"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -232,54 +254,54 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                    <LinearLayout
-                        android:id="@+id/life"
-                        android:layout_width="170dp"
+                <LinearLayout
+                    android:id="@+id/life"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/img_life"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/img_life" />
+
+                    <TextView
+                        android:id="@+id/text_life"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF">
-                        <ImageView
-                            android:id="@+id/img_life"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/img_life" />
-                        <TextView
-                            android:id="@+id/text_life"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="官方周边"
-                            android:textColor="@color/black"
-                            android:gravity="top"/>
+                        android:gravity="top"
+                        android:text="官方周边"
+                        android:textColor="@color/black" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/news"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF">
+
                     <ImageView
                         android:id="@+id/img_news"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_news" />
+
                     <TextView
                         android:id="@+id/text_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="你造吗？"
-                        android:textColor="@color/black"
-                        android:layout_gravity="top"/>
+                        android:layout_gravity="top"
+                        android:text="造吗？"
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:gravity="center">
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/first_recyclerview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </android.support.v7.widget.RecyclerView>
-        </LinearLayout>
+            android:gravity="center"></LinearLayout>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
