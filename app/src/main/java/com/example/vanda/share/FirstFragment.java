@@ -2,13 +2,17 @@ package com.example.vanda.share;
 
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +22,7 @@ import android.widget.LinearLayout;
  */
 public class FirstFragment extends Fragment {
     ImageSlideshow imageSlideshow;
+
 
     public FirstFragment() {
         // Required empty public constructor
