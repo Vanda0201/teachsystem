@@ -34,6 +34,12 @@ public class FirstFragment extends Fragment {
         ImageButton shangchuan = view.findViewById(R.id.uploadbutton);
         LinearLayout kaoshi = view.findViewById(R.id.exam);
         LinearLayout kaoyan = view.findViewById(R.id.postgraduate);
+        LinearLayout kuaidi = view.findViewById(R.id.express);
+        LinearLayout jianzhi = view.findViewById(R.id.job);
+        LinearLayout zhoubian = view.findViewById(R.id.life);
+        LinearLayout xinwen = view.findViewById(R.id.news);
+
+
         kaozhengimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +67,42 @@ public class FirstFragment extends Fragment {
 
             }
         });
+
+
+
+
+
+
+        kuaidi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), ExpressActivity.class));
+
+            }
+        });
+        jianzhi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), JobActivity.class));
+
+            }
+        });
+        zhoubian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), LifeActivity.class));
+
+            }
+        });
+        xinwen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), NewsActivity.class));
+
+            }
+        });
+
+
         imageSlideshow = (ImageSlideshow) view.findViewById(R.id.is_gallery);
 //        imageUrlList = new ArrayList<>();
 //        titleList = new ArrayList<>();

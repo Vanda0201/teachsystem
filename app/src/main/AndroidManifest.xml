@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vanda.share">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -37,7 +38,11 @@
         <activity android:name=".ContactUsActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".ExamActivity" />
-        <activity android:name=".Postgraduate_examinationActivity"></activity>
+        <activity android:name=".Postgraduate_examinationActivity" />
+        <activity android:name=".ExpressActivity" />
+        <activity android:name=".JobActivity" />
+        <activity android:name=".LifeActivity" />
+        <activity android:name=".NewsActivity"></activity>
     </application>
 
 </manifest>
