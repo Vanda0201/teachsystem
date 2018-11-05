@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#FFFFFF"
+        android:background="@drawable/frgment_first_01"
         android:layout_marginTop="20dp">
 
         <ImageView
@@ -98,7 +98,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/frgment_third_01"
+            android:layout_marginTop="1dp"
             android:gravity="center_vertical">
             <ImageView
                 android:layout_width="0dp"
@@ -124,7 +125,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/frgment_third_01"
+            android:layout_marginTop="1dp"
             android:gravity="center_vertical">
 
             <ImageView
@@ -152,7 +154,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/frgment_third_01"
+            android:layout_marginTop="1dp"
             android:gravity="center_vertical">
             <ImageView
                 android:layout_width="0dp"
@@ -179,7 +182,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/frgment_third_01"
+            android:layout_marginTop="1dp"
             android:gravity="center_vertical">
             <ImageView
                 android:layout_width="0dp"
@@ -205,7 +209,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/frgment_third_01"
             android:gravity="center_vertical"
             android:layout_marginTop="30dp">
             <ImageView
