@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactUs"
+    tools:context=".ContactUsActivity"
     android:orientation="vertical">
 
     <include
@@ -15,5 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="官方QQ:\n\n官方微信公众号："
-        android:textSize="24sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 </LinearLayout>

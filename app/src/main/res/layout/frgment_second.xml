@@ -43,7 +43,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="推荐" />
+                        android:text="推荐"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -64,7 +65,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="闲书" />
+                        android:text="闲书"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -85,7 +87,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="电子数码"/>
+                        android:text="电子数码"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -106,7 +109,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="运动"/>
+                        android:text="运动"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,7 +131,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="寝室用品"/>
+                        android:text="寝室用品"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -148,7 +153,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="美妆"/>
+                        android:text="美妆"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </LinearLayout>
 
