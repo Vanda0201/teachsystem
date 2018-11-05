@@ -26,8 +26,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3.5"
+            android:layout_height="150dp"
             android:background="#ffffff"
             android:gravity="center"
             android:orientation="vertical">
@@ -42,9 +41,8 @@
                     android:id="@+id/zhengshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="40dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginRight="35dp">
 
                     <ImageView
                         android:id="@+id/img_zhengshu"
@@ -58,6 +56,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="证书"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -66,8 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:background="#FFFFFF"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -83,6 +81,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="考试"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -91,9 +90,8 @@
                     android:id="@+id/postgraduate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginLeft="35dp">
 
                     <ImageView
                         android:id="@+id/img_postgraduate"
@@ -108,6 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="考研"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
@@ -122,9 +121,8 @@
                     android:id="@+id/art_sport"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="40dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginRight="35dp">
 
                     <ImageView
                         android:id="@+id/img_art_sport"
@@ -139,6 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="体艺"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -147,8 +146,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <ImageView
                         android:id="@+id/img_audiovisual"
@@ -163,6 +162,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="影音"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -170,9 +170,8 @@
                     android:id="@+id/social_exam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginLeft="35dp">
 
                     <ImageView
                         android:id="@+id/img_social_exam"
@@ -186,66 +185,94 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="社会考试"
+                        android:text="自考"
+                        android:textSize="18sp"
                         android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="12dp"
-            android:layout_weight="3"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/frgment_first_01"
+            android:gravity="center"
+            android:layout_gravity="center">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/express"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/frgment_first_01"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/img_express"
-                        android:layout_width="100dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_express" />
 
-                    <TextView
-                        android:id="@+id/text_express"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#ffffff"
-                        android:gravity="top"
-                        android:text="快递帮"
-                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:id="@+id/discribe_express"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_express"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:gravity="top"
+                            android:text="快递帮"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/text_discribe_express"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="帮你解决最后一公里!"
+                            android:textSize="12sp"/>
                 </LinearLayout>
 
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/job"
                     android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/frgment_first_01">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/img_job"
-                        android:layout_width="100dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_job" />
 
-                    <TextView
-                        android:id="@+id/text_job"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="找兼职"
-                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:id="@+id/discribe_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/text_job"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="找兼职"
+                            android:textSize="16sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/text_discribe_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="快来赚点零花钱！"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -257,51 +284,69 @@
                 <LinearLayout
                     android:id="@+id/life"
                     android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/frgment_first_01">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/img_life"
-                        android:layout_width="100dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_life" />
 
-                    <TextView
-                        android:id="@+id/text_life"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="top"
-                        android:text="官方周边"
-                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:id="@+id/discribe_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/text_life"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:text="官方周边"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/text_discribe_life"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="悦享生活,越好生活!"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/news"
                     android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/frgment_first_01">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/img_news"
-                        android:layout_width="100dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/img_news" />
 
+                    <LinearLayout
+                        android:id="@+id/discribe_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
                     <TextView
                         android:id="@+id/text_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
-                        android:text="造吗？"
+                        android:text="你造吗？"
                         android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/text_discribe_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="身边事都知道!"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:gravity="center"></LinearLayout>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
