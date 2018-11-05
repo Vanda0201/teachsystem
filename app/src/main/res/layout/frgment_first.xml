@@ -209,7 +209,7 @@
                     android:id="@+id/express"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/frgment_first_01"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -232,7 +232,7 @@
                     android:id="@+id/job"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF">
+                    android:background="@drawable/frgment_first_01">
 
                     <ImageView
                         android:id="@+id/img_job"
@@ -258,7 +258,7 @@
                     android:id="@+id/life"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF">
+                    android:background="@drawable/frgment_first_01">
 
                     <ImageView
                         android:id="@+id/img_life"
@@ -279,7 +279,7 @@
                     android:id="@+id/news"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF">
+                    android:background="@drawable/frgment_first_01">
 
                     <ImageView
                         android:id="@+id/img_news"
