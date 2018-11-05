@@ -11,10 +11,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
+
+
+
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ThirdFragment extends Fragment {
+
 
 
     public ThirdFragment() {
@@ -104,17 +108,8 @@ public class ThirdFragment extends Fragment {
 
             }
         });
-
-
-
-
-
-
-
-
         return view;
     }
-
 }
 
 
