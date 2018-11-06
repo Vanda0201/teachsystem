@@ -13,22 +13,28 @@
 
         <TextView
             android:id="@+id/Share"
-            android:layout_width="0dp"
-            android:layout_weight="7.5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  悦享"
             android:textSize="24sp"
+            android:gravity="center"
             android:textColor="@color/black"/>
         <SearchView
-            android:id="@+id/search_resource"
+            android:id="@+id/msearch"
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:iconifiedByDefault="false"
+            android:focusable="false"
             />
         <TextView
             android:id="@+id/text_search_resource"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            android:text="搜索资源"/>
+            android:text="搜索资源"
+            android:gravity="center"/>
     </LinearLayout>
 </RelativeLayout>

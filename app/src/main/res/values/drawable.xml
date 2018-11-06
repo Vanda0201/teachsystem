@@ -6,7 +6,7 @@
     <item name="button_c_02_solid" type="drawable">#ffd9d9d9</item>
     <item name="button_c_02_stroke" type="drawable">#ff595959</item>
 
-    <item name="button_b_01_solid" type="drawable">#F0E4DD</item>
+    <item name="button_b_01_solid" type="drawable">#A57E69</item>
     <item name="button_b_02_solid" type="drawable">#F0ECEB</item>
     <item name="button_b_03_solid" type="drawable">#fff0f0f0</item>
     <item name="button_b_04_solid" type="drawable">#ffe1e1e3</item>
