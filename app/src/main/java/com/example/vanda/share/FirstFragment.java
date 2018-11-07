@@ -25,7 +25,6 @@ import android.widget.ViewFlipper;
 public class FirstFragment extends Fragment {
     ImageSlideshow imageSlideshow;
     private ViewFlipper view_flipper;
-
     public FirstFragment() {
         // Required empty public constructor
     }
