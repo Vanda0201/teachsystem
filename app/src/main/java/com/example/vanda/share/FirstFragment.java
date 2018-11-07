@@ -19,6 +19,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import java.io.StringReader;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -138,12 +142,12 @@ public class FirstFragment extends Fragment {
 //                "http://pic2.zhimg.com/be6f444c9c8bc03baa8d79cecae40961.jpg",
 //                "http://pic1.zhimg.com/b6f59c017b43937bb85a81f9269b1ae8.jpg",
 //                "http://pic2.zhimg.com/a62f9985cae17fe535a99901db18eba9.jpg"};
-        int[] imageIds = new int[]{R.drawable.android_home_search_clean, R.drawable.button_b_01, R.drawable.android_home_search_clean, R.drawable.button_b_01, R.drawable.button_b_01,};
-        String[] titles = {"范",
-                "范",
-                "范",
-                "知乎好问题 · 有什么冷门、小众的爱好？",
-                "欧洲都这么发达了，怎么人均收入还比美国低"};
+        int[] imageIds = new int[]{R.drawable.img_1, R.drawable.img_2, R.drawable.img_3, R.drawable.img_4, R.drawable.img_5};
+        String[] titles = {"蒲公英",
+                "林允儿",
+                "索尼相机",
+                "科比",
+                "大国重器"};
         for (int i = 0; i < 5; i++) {
 //            imageSlideshow.addImageTitle(imageUrls[i], titles[i]);
            imageSlideshow.addImageTitleWithId(imageIds[i], titles[i]);
@@ -159,12 +163,17 @@ public class FirstFragment extends Fragment {
     }
     private void initView() {
 
-        for(int i=0;i<3;i++){
+
+        String[] imageId = new String[]{"1", "2","3","4","5"};
+
+
+        for(int i=0;i<6;i++){
             View view = getLayoutInflater().inflate(R.layout.item_flipper,null);
             TextView textView =  view.findViewById(R.id.tv);
+
             textView.setText("广告："+i);
             view_flipper.addView(view);
-        }
+       }
         view_flipper.setFlipInterval(2000);
         view_flipper.startFlipping();
 

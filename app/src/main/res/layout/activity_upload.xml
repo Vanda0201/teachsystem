@@ -153,7 +153,7 @@
                         android:textColor="@color/login_name_text_color"
                         android:textSize="@dimen/login_editor_layout_edit_text_size"/>
                     <EditText
-                        android:id="@+id/login_input_password"
+                        android:id="@+id/describe"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -162,7 +162,6 @@
                         android:layout_toRightOf="@id/login_page_input_password"
                         android:background="@color/white"
                         android:hint="描述一下资源啦"
-                        android:inputType="textPassword"
                         android:longClickable="false"
                         android:singleLine="true"
                         android:textColor="@color/login_name_edit_color"

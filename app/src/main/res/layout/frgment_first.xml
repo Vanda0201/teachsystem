@@ -36,6 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/frgment_first_01"
                     android:gravity="center"
@@ -51,7 +52,7 @@
                             android:id="@+id/zhengshu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="35dp"
+                            android:layout_marginRight="30dp"
                             android:orientation="vertical">
 
                             <ImageView
@@ -98,7 +99,7 @@
                             android:id="@+id/postgraduate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
+                            android:layout_marginLeft="30dp"
                             android:orientation="vertical">
 
                             <ImageView
@@ -129,7 +130,7 @@
                             android:id="@+id/art_sport"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="35dp"
+                            android:layout_marginRight="30dp"
                             android:orientation="vertical">
 
                             <ImageView
@@ -178,7 +179,7 @@
                             android:id="@+id/social_exam"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
+                            android:layout_marginLeft="30dp"
                             android:orientation="vertical">
 
                             <ImageView
@@ -223,12 +224,12 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="match_parent"
                     android:layout_height="117dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/frgment_first_01"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -236,7 +237,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -247,8 +249,8 @@
 
                             <ImageView
                                 android:id="@+id/img_express"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 app:srcCompat="@drawable/img_express" />
 
                             <LinearLayout
@@ -264,8 +266,7 @@
                                     android:background="#ffffff"
                                     android:gravity="top"
                                     android:text="快递帮"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textColor="@color/black" />
 
                                 <TextView
                                     android:id="@+id/text_discribe_express"
@@ -279,13 +280,13 @@
 
                         <LinearLayout
                             android:id="@+id/job"
-                            android:layout_width="170dp"
+                            android:layout_width="150dp"
                             android:layout_height="wrap_content">
 
                             <ImageView
                                 android:id="@+id/img_job"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 app:srcCompat="@drawable/img_job" />
 
                             <LinearLayout
@@ -299,8 +300,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="找兼职"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textColor="@color/black" />
 
                                 <TextView
                                     android:id="@+id/text_discribe_job"
@@ -316,17 +316,18 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center">
+                        android:layout_gravity="center">
 
                         <LinearLayout
                             android:id="@+id/life"
                             android:layout_width="170dp"
+                            android:layout_gravity="center"
                             android:layout_height="wrap_content">
 
                             <ImageView
                                 android:id="@+id/img_life"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 app:srcCompat="@drawable/img_life" />
 
                             <LinearLayout
@@ -354,13 +355,13 @@
 
                         <LinearLayout
                             android:id="@+id/news"
-                            android:layout_width="170dp"
+                            android:layout_width="150dp"
                             android:layout_height="wrap_content">
 
                             <ImageView
                                 android:id="@+id/img_news"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 app:srcCompat="@drawable/img_news" />
 
                             <LinearLayout
