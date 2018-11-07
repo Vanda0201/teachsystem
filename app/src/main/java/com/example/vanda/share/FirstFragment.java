@@ -16,13 +16,15 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class FirstFragment extends Fragment {
     ImageSlideshow imageSlideshow;
-
+    private ViewFlipper view_flipper;
 
     public FirstFragment() {
         // Required empty public constructor
@@ -125,6 +127,9 @@ public class FirstFragment extends Fragment {
         imageSlideshow.setDotSize(12);
         imageSlideshow.setDelay(3000);
         imageSlideshow.commit();
+
+        view_flipper = (ViewFlipper) view.findViewById(R.id.view_flipper);
+        initView();
         return view;
     }
 
@@ -153,4 +158,17 @@ public class FirstFragment extends Fragment {
         super.onDestroy();
         imageSlideshow.releaseResource();
     }
+    private void initView() {
+
+        for(int i=0;i<3;i++){
+            View view = getLayoutInflater().inflate(R.layout.item_flipper,null);
+            TextView textView =  view.findViewById(R.id.tv);
+            textView.setText("广告："+i);
+            view_flipper.addView(view);
+        }
+        view_flipper.setFlipInterval(2000);
+        view_flipper.startFlipping();
+
+    }
+
 }
