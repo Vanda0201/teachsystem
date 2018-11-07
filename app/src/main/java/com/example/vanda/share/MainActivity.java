@@ -63,18 +63,7 @@ public class MainActivity extends AppCompatActivity {
         //appy运行指定首画面
         navigation.setSelectedItemId(id.navigation_shouye);
     }
-        //悦享头条
-//        @SuppressLint("ResourceType")
-//        public View onCreateView(LayoutInflater inflater,
-//                                 ViewGroup container, Bundle savedInstanceState) {
-//            // TODO Auto-generated method stub
-//            View view = inflater.inflate(layout.frgment_first,container,false);
-//            ViewFlipper flipper = (ViewFlipper) view.findViewById(id.vf);
-//            flipper.setInAnimation(this.getBaseContext(),right_in);
-//            flipper.setOutAnimation(this.getBaseContext(),right_out);
-//            flipper.startFlipping();
-//            return view;
-//   }
+
 
 
 }
