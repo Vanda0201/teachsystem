@@ -32,12 +32,25 @@ public class ThirdFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.frgment_third, container, false);
 
+        LinearLayout order = view.findViewById(R.id.order);
         LinearLayout collection = view.findViewById(R.id.collection);
         LinearLayout publish = view.findViewById(R.id.publish);
         LinearLayout upload = view.findViewById(R.id.upload);
         LinearLayout download = view.findViewById(R.id.download);
         LinearLayout contactus = view.findViewById(R.id.contact_us);
         ImageView settings = view.findViewById(R.id.settings);
+
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Util.isLogin(getContext())) {
+                    startActivity(new Intent(getContext(), MyOrderActivity.class));
+                } else {
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+
+            }
+        });
 
         collection.setOnClickListener(new View.OnClickListener() {
             @Override

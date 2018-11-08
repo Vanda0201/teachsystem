@@ -1,7 +1,7 @@
 package com.example.vanda.share;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
+import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,18 +9,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
+import android.util.AttributeSet;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.ResourceCursorTreeAdapter;
 import android.widget.TextView;
-import android.widget.ViewFlipper;
 
 import static com.example.vanda.share.R.*;
-import static com.example.vanda.share.R.animator.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //appy运行指定首画面
         navigation.setSelectedItemId(id.navigation_shouye);
+    }
+
+    private void setTypeface() {
+        //获取控件
+        TextView tv_main_text= (TextView) findViewById(R.id.Share);
+        //设置字体
+        Typeface typeface=Typeface.createFromAsset(getAssets(), "fonts/LoveLight.ttf");
+        tv_main_text.setTypeface(typeface);
+
     }
 
 

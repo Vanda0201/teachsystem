@@ -8,15 +8,15 @@
         android:id="@+id/search_layout"
         android:layout_width="fill_parent"
         android:layout_height="50.0dip"
-        android:background="#ffffff"
+        android:background="#E7EDEF"
         android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/Share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  悦享"
-            android:textSize="24sp"
+            android:text="  share"
+            android:textSize="18sp"
             android:gravity="center"
             android:textColor="@color/black"/>
         <SearchView

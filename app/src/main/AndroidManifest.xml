@@ -23,8 +23,7 @@
             android:label="@string/title_activity_main" />
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan"></activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".CollectionActivity" />
         <activity android:name=".MyPublishActivity" />
@@ -38,7 +37,8 @@
         <activity android:name=".JobActivity" />
         <activity android:name=".LifeActivity" />
         <activity android:name=".NewsActivity" />
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +46,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MyOrderActivity"></activity>
     </application>
 
 </manifest>

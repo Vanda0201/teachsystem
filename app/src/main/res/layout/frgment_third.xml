@@ -93,6 +93,34 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/frgment_third_01"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_order"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:text="  我的订单"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_right_arrow"/>
+        </LinearLayout>
         <LinearLayout
             android:id="@+id/collection"
             android:layout_width="match_parent"
