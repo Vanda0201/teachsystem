@@ -146,7 +146,6 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:text="体艺"
-
                                 android:textColor="@color/black" />
                         </LinearLayout>
 
@@ -227,9 +226,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="117dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/frgment_first_01"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -280,7 +279,7 @@
 
                         <LinearLayout
                             android:id="@+id/job"
-                            android:layout_width="150dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content">
 
                             <ImageView
@@ -355,7 +354,7 @@
 
                         <LinearLayout
                             android:id="@+id/news"
-                            android:layout_width="150dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content">
 
                             <ImageView

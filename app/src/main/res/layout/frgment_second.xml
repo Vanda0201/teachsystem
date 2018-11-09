@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
          <include
              android:id="@+id/secondheader"
@@ -28,15 +28,14 @@
                 <LinearLayout
                     android:id="@+id/recommend"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_recommend"
                         android:layout_width="wrap_content"
-                        android:layout_height="38dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="推荐"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
@@ -45,15 +44,14 @@
                 <LinearLayout
                     android:id="@+id/idle_book"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_idle_book"
                         android:layout_width="wrap_content"
-                        android:layout_height="38dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="闲书"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
@@ -62,16 +60,15 @@
                 <LinearLayout
                     android:id="@+id/digital"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_digital"
                         android:layout_width="wrap_content"
-                        android:layout_height="3dp"
-                        android:layout_weight="1"
-                        android:text="电子数码"
+                        android:layout_height="wrap_content"
+                        android:text="电子\n数码"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
                 </LinearLayout>
@@ -79,15 +76,14 @@
                 <LinearLayout
                     android:id="@+id/sport"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_sport"
                         android:layout_width="wrap_content"
-                        android:layout_height="3dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="运动"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
@@ -96,16 +92,15 @@
                 <LinearLayout
                     android:id="@+id/bedding"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_bedding"
                         android:layout_width="wrap_content"
-                        android:layout_height="3dp"
-                        android:layout_weight="1"
-                        android:text="寝室用品"
+                        android:layout_height="match_parent"
+                        android:text="寝室\n用品"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
                 </LinearLayout>
@@ -113,27 +108,26 @@
                 <LinearLayout
                     android:id="@+id/cosmetics"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_cosmetics"
                         android:layout_width="wrap_content"
-                        android:layout_height="3dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:text="美妆"
                         android:textColor="@color/black"
                         android:textSize="19sp" />
                 </LinearLayout>
             </LinearLayout>
 
-            <ListView
+            <android.support.v7.widget.RecyclerView
                 android:id="@+id/classify"
                 android:layout_width="0dp"
                 android:layout_weight="8"
                 android:layout_height="match_parent">
-            </ListView>
+            </android.support.v7.widget.RecyclerView>
         </LinearLayout>
     </LinearLayout>
 
