@@ -51,20 +51,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_main);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //appy运行指定首画面
         navigation.setSelectedItemId(id.navigation_shouye);
     }
 
-    private void setTypeface() {
-        //获取控件
-        TextView tv_main_text= (TextView) findViewById(R.id.Share);
-        //设置字体
-        Typeface typeface=Typeface.createFromAsset(getAssets(), "fonts/LoveLight.ttf");
-        tv_main_text.setTypeface(typeface);
 
-    }
 
 
 

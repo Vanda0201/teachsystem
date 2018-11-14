@@ -15,8 +15,8 @@
             android:id="@+id/Share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  悦享"
-            android:textSize="24sp"
+            android:text="   share"
+            android:textSize="28sp"
             android:gravity="center"
             android:textColor="@color/black"/>
         <SearchView
