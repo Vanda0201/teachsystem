@@ -37,6 +37,16 @@ public class SecondFragment extends Fragment {
             }
         });
 
+        //        演示用点击
+        LinearLayout exlist = (LinearLayout)view.findViewById(R.id.ex_goods_details);
+        exlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(),Goods_detailsActivity.class));
+            }
+        });
+
+
         goodsList = new ArrayList<GoodsItem>();
         final GoodsAdapter goodsAdapter = new GoodsAdapter(goodsList);
         LinearLayoutManager layoutManager  = new LinearLayoutManager(getContext());
