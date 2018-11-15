@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Goods_detailsActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Goods_detailsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <include
                 android:id="@+id/goods_details"
-                layout="@layout/header_goods_details"/>
+                layout="@layout/header_goods_details" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/Ziyuan_title"
@@ -35,57 +34,70 @@
                 android:textSize="20dp" />
         </LinearLayout>
     </LinearLayout>
-        <LinearLayout
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/discribe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3">
+            android:layout_height="200dp"
+            android:text="详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n"
+            android:gravity="center"
+            android:textSize="20sp"/>
 
-            <TextView
-                android:id="@+id/discribe"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="描述"/>
-        </LinearLayout>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/img_collection"/>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/img_collection"/>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/img_collection"/>
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/img_discribe"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    </LinearLayout>
+</ScrollView>
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/price"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="4">
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/img_discribe"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/price"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp" />
-        </LinearLayout>
+            android:layout_height="40dp"
+            android:text="￥9.9    "
+            android:textSize="22sp"
+            android:textColor="@color/red"
+            android:layout_gravity="end"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/Collect"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:background="@drawable/img_collect"/>
+            android:background="@drawable/img_collect" />
 
         <Button
             android:id="@+id/Buy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="9"
-            android:text="我要买"/>
+            android:text="我要买" />
 
     </LinearLayout>
 </LinearLayout>
