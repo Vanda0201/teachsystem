@@ -44,8 +44,8 @@ public class CertificateActivity extends AppCompatActivity {
         datas.add(new Fruit(R.drawable.exp_apple,"皮皮虾"));
         datas.add(new Fruit(R.drawable.exp_apple,"七彩宝龙"));
         datas.add(new Fruit(R.drawable.img_express,"ABaby"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple,"COUNY"));
+        datas.add(new Fruit(R.drawable.exp_apple,"CURRY"));
         datas.add(new Fruit(R.drawable.exp_apple,"banana"));
         datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
         datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
