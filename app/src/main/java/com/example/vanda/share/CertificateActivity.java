@@ -1,65 +1,76 @@
 package com.example.vanda.share;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CertificateActivity extends AppCompatActivity {
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificate);
 
-            //从该activity跳转回首页的fragment
-            ImageView backBtn = (ImageView) findViewById(R.id.certificateback);
-            backBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    finish();
-                }
-            });
+        //从该activity跳转回首页的fragment
+        ImageView backBtn = (ImageView) findViewById(R.id.certificateback);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
-            List<Fruit> datas = initData();
-            ListView listView = (ListView)findViewById(R.id.listView) ;
+
+        List<Fruit> datas = initData();
+        listView = (ListView) findViewById(R.id.listView);
+
+
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
-        FruitAdapter adapter = new FruitAdapter(CertificateActivity.this,R.layout.fruit_item, datas);
-
+        FruitAdapter adapter = new FruitAdapter(CertificateActivity.this, R.layout.fruit_item, datas);
         listView.setAdapter(adapter);
     }
 
+
     private List<Fruit> initData() {
         List<Fruit> datas = new ArrayList<Fruit>();
-        datas.add(new Fruit(R.drawable.exp_touxiang1,"淮师一枝花"));
-        datas.add(new Fruit(R.drawable.exp_touxiang2,"402-1扛把子"));
-        datas.add(new Fruit(R.drawable.exp_apple,"皮皮虾"));
-        datas.add(new Fruit(R.drawable.exp_apple,"七彩宝龙"));
-        datas.add(new Fruit(R.drawable.img_express,"ABaby"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"banana"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"banana"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple,"banana"));
+        datas.add(new Fruit(R.drawable.exp_touxiang1, "淮师一枝花"));
+        datas.add(new Fruit(R.drawable.exp_touxiang2, "402-1扛把子"));
+        datas.add(new Fruit(R.drawable.exp_apple, "皮皮虾"));
+        datas.add(new Fruit(R.drawable.exp_apple, "七彩宝龙"));
+        datas.add(new Fruit(R.drawable.img_express, "ABaby"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
 
         return datas;
 
     }
 
 
-
-    protected void onActivityResult(int requestCode, int resultCode,@Nullable Intent data) {
-        if(requestCode==1){if(resultCode==RESULT_OK)
-        {String name=data.getStringExtra("name");
-            Toast.makeText(CertificateActivity.this,name,Toast.LENGTH_LONG).show();}
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                String name = data.getStringExtra("name");
+                Toast.makeText(CertificateActivity.this, name, Toast.LENGTH_LONG).show();
+            }
         }
     }
-
-
 
 
 }

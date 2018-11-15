@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CertificateActivity"
+    android:background="#FAEBD7"
     android:orientation="vertical"
-    android:background="#FAEBD7">
+    tools:context=".CertificateActivity">
 
     <include
         android:id="@+id/certificate_header"
-        layout="@layout/header_certificate"/>
+        layout="@layout/header_certificate" />
 
     <SearchView
         android:id="@+id/search_certificate"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="50dp" />
     <!--轮播图-->
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,76 +25,83 @@
         <ImageView
             android:id="@+id/dot"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:srcCompat="@drawable/exp_fxiang" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:background="#FFFAF0"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginEnd="8dp"
-        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
         android:layout_weight="2"
+        android:background="#FFFAF0"
 
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:id="@+id/cet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_cet"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
-                app:srcCompat="@drawable/img_cet"/>
+                app:srcCompat="@drawable/img_cet" />
+
             <TextView
                 android:id="@+id/text_cet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="英语四六级"/>
+                android:text="英语四六级" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ncre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_ncre"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
                 app:srcCompat="@drawable/img_ncre" />
+
             <TextView
                 android:id="@+id/text_ncre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="计算机二级"/>
+                android:text="计算机二级" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ntce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_ntce"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
                 app:srcCompat="@drawable/img_ntce" />
+
             <TextView
                 android:id="@+id/text_ntce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="教师资格证"/>
+                android:text="教师资格证" />
         </LinearLayout>
     </LinearLayout>
 
@@ -109,7 +115,6 @@
         app:layout_constraintBottom_toTopOf="@+id/ntce"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ListView>
-
 
 
 </LinearLayout>
