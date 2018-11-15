@@ -163,6 +163,8 @@ public class FirstFragment extends Fragment {
         super.onDestroy();
         imageSlideshow.releaseResource();
     }
+
+
     private void initView() {
 
 
