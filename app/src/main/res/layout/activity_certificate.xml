@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CertificateActivity"
+    android:background="#FAEBD7"
     android:orientation="vertical"
-    android:background="#FAEBD7">
+    tools:context=".CertificateActivity">
 
     <include
         android:id="@+id/certificate_header"
-        layout="@layout/header_certificate"/>
+        layout="@layout/header_certificate" />
 
     <SearchView
         android:id="@+id/search_certificate"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="50dp" />
     <!--轮播图-->
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,232 +25,96 @@
         <ImageView
             android:id="@+id/dot"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:srcCompat="@drawable/exp_fxiang" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:background="#FFFAF0"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginEnd="8dp"
-        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
         android:layout_weight="2"
+        android:background="#FFFAF0"
 
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:id="@+id/cet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_cet"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
-                app:srcCompat="@drawable/img_cet"/>
+                app:srcCompat="@drawable/img_cet" />
+
             <TextView
                 android:id="@+id/text_cet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="英语四六级"/>
+                android:text="英语四六级" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ncre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_ncre"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
                 app:srcCompat="@drawable/img_ncre" />
+
             <TextView
                 android:id="@+id/text_ncre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="计算机二级"/>
+                android:text="计算机二级" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ntce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/img_ntce"
                 android:layout_width="102dp"
                 android:layout_height="74dp"
                 app:srcCompat="@drawable/img_ntce" />
+
             <TextView
                 android:id="@+id/text_ntce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="教师资格证"/>
+                android:text="教师资格证" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-
-        android:layout_width="370dp"
-        android:layout_height="0dp"
-        android:layout_weight="4"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:background="#ffffff">
-
-        <LinearLayout
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:background="#FFFFFF">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="7"
-
-                android:gravity="center"
-                android:text="我要推荐"
-                android:textSize="15sp" />
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="7"
-                android:gravity="center"
-                android:text="证书分类" />
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="7"
-                android:gravity="center"
-                android:text="人气" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="7"
-                android:gravity="center"
-                android:text="筛选" />
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="70dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/exp_touxiang1"/>
-            <LinearLayout
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="250dp"
-                        android:layout_height="25dp"
-                        android:text="内容：教资《综合素质》必背三观"/>
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/exp_shoucang"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:text="上传者："/>
-                    <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="淮师一枝花"
-                        android:textSize="20dp"/>
-
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            >
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/exp_touxiang2"/>
-            <LinearLayout
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="250dp"
-                        android:layout_height="25dp"
-                        android:text="内容：教资《综合素质》必背三观"/>
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/exp_yishoucang"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:text="上传者："/>
-                    <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="淮师一枝花"
-                        android:textSize="20dp"/>
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/ntce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
 
 
 </LinearLayout>
