@@ -33,17 +33,19 @@ public class Resource_detailsActivity extends AppCompatActivity {
                 }
                 private  void duihuakuang(){
                     AlertDialog.Builder bb = new AlertDialog.Builder(Resource_detailsActivity.this);
-                    bb.setPositiveButton("下载", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    });
+
                     bb.setPositiveButton("取消", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
                         }
                     });
+                    bb.setPositiveButton("下载", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+
                     bb.setMessage("你确定要花费2积分下载该文档吗？");
                     bb.setTitle("下载提示");
                     bb.show();
