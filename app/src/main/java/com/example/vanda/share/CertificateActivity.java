@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -33,6 +34,16 @@ public class CertificateActivity extends AppCompatActivity {
 
         List<Fruit> datas = initData();
         listView = (ListView) findViewById(R.id.listView);
+        //跳转到资源详情
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getApplicationContext(), Resource_detailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);

@@ -1,8 +1,11 @@
 package com.example.vanda.share;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Resource_detailsActivity extends AppCompatActivity {
@@ -13,11 +16,47 @@ public class Resource_detailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resource_details);
         //        返回键
         ImageView mypublishback = (ImageView) findViewById(R.id.title_back);
+        Button download =(Button)findViewById(R.id.download_button);
         mypublishback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+
+
+        download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    duihuakuang();
+                }
+                private  void duihuakuang(){
+                    AlertDialog.Builder bb = new AlertDialog.Builder(Resource_detailsActivity.this);
+                    bb.setPositiveButton("下载", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+                    bb.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    bb.setMessage("你确定要花费2积分下载该文档吗？");
+                    bb.setTitle("下载提示");
+                    bb.show();
+                }
+
+        });
+
     }
-}
+
+    }
+
+
+
+
+
+

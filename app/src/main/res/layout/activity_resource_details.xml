@@ -201,7 +201,7 @@
             android:layout_gravity="center_vertical"
             android:background="@drawable/img_collect"/>
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/download_button"
         android:layout_width="0dp"
         android:layout_weight="9"
         android:layout_height="@dimen/login_comfirm_button_height"
