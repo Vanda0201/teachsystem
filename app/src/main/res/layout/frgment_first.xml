@@ -199,26 +199,30 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/headline"
-                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
                     <TextView
                         android:id="@+id/text_view_flipper"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="悦享头条"
-                        android:textSize="18sp"
                         android:layout_marginStart="15dp"
-                        android:textColor="@color/black"/>
+                        android:text="悦享头条"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
                     <ViewFlipper
                         android:id="@+id/view_flipper"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:inAnimation="@anim/anim_in"
-                        android:outAnimation="@anim/anim_out"
-                        android:layout_gravity="center"/>
+                        android:outAnimation="@anim/anim_out" />
 
                 </LinearLayout>
 
@@ -320,8 +324,8 @@
                         <LinearLayout
                             android:id="@+id/life"
                             android:layout_width="170dp"
-                            android:layout_gravity="center"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
 
                             <ImageView
                                 android:id="@+id/img_life"

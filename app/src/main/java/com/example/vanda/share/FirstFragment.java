@@ -136,13 +136,16 @@ public class FirstFragment extends Fragment {
 //                "http://pic2.zhimg.com/be6f444c9c8bc03baa8d79cecae40961.jpg",
 //                "http://pic1.zhimg.com/b6f59c017b43937bb85a81f9269b1ae8.jpg",
 //                "http://pic2.zhimg.com/a62f9985cae17fe535a99901db18eba9.jpg"};
-        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4};
+        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4,R.drawable.ex_5,R.drawable.ex_6};
         String[] titles = {"悦享商城",
                 "悦享周边",
                 "悦享资源",
                 "探索悦享",
-                "大国重器"};
-        for (int i = 0; i < 4; i++) {
+                "大国重器",
+                "计划重器",
+                "哈哈大国",
+        };
+        for (int i = 0; i < 6; i++) {
 //            imageSlideshow.addImageTitle(imageUrls[i], titles[i]);
            imageSlideshow.addImageTitleWithId(imageIds[i], titles[i]);
            // imageSlideshow.addImageId(imageIds[i]);
@@ -171,18 +174,17 @@ public class FirstFragment extends Fragment {
             textView.setText(news);
             view_flipper.addView(view);
        }
-        view_flipper.setFlipInterval(2000);
+        view_flipper.setFlipInterval(3000);
         view_flipper.startFlipping();
 
     }
     private List<String> getNews(){
         List<String> news = new ArrayList<String>();
         news.add("探索悦享，一起成为仰望星空的人");
-        news.add("探索悦享，一起成为仰望星空的人");
-        news.add("探索悦享，一起成为仰望星空的人");
-        news.add("探索悦享，一起成为仰望星空的人");
-        news.add("探索悦享，一起成为仰望星空的人");
-        news.add("探索悦享，一起成为仰望星空的人");
+        news.add("2019计算机等级考试--你报名了吗？");
+        news.add("官宣！--悦享只是想蹭个热度");
+        news.add("悦享，互动分享资源新选择！");
+        news.add("2018四六级--你准备好了吗？");
 
         return news;
     }
