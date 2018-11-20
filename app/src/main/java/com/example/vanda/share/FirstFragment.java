@@ -2,6 +2,7 @@ package com.example.vanda.share;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -137,13 +138,13 @@ public class FirstFragment extends Fragment {
 //                "http://pic1.zhimg.com/b6f59c017b43937bb85a81f9269b1ae8.jpg",
 //                "http://pic2.zhimg.com/a62f9985cae17fe535a99901db18eba9.jpg"};
         int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4,R.drawable.ex_5,R.drawable.ex_6};
-        String[] titles = {"悦享商城",
-                "悦享周边",
-                "悦享资源",
-                "探索悦享",
-                "大国重器",
-                "计划重器",
-                "哈哈大国",
+        String[] titles = {"",
+                "",
+                "",
+                "",
+                "",
+                "",
+
         };
         for (int i = 0; i < 6; i++) {
 //            imageSlideshow.addImageTitle(imageUrls[i], titles[i]);
@@ -172,6 +173,7 @@ public class FirstFragment extends Fragment {
             TextView textView =  view.findViewById(R.id.tv);
 
             textView.setText(news);
+            textView.setTextColor(Color.rgb(0,0,0));
             view_flipper.addView(view);
        }
         view_flipper.setFlipInterval(3000);
