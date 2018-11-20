@@ -23,63 +23,151 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/Ziyuan_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Title"
+                android:text="CURRY"
                 android:textSize="20dp" />
+            <TextView
+                android:id="@+id/discribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="立白洗衣液 买多了，用不完，转，自取，25一盒。共四盒，全部收了可优惠，闲置售出不退
+本交易支持自提、当面交易"
+                android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="7">
-    <LinearLayout
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang22" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang22" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang2" />
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/img_discribe"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang22" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang2" />
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/img_discribe"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang22" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/exp_touxiang2" />
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/img_discribe"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/price"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/discribe"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:text="详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n详细描述\n"
-            android:gravity="center"
-            android:textSize="20sp"/>
-
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:background="@drawable/img_collection"/>
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:background="@drawable/img_collection"/>
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:background="@drawable/img_collection"/>
-        <!--<android.support.v7.widget.RecyclerView-->
-            <!--android:id="@+id/img_discribe"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent" />-->
-    </LinearLayout>
-</ScrollView>
-
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="￥9.9    "
-            android:textSize="22sp"
-            android:textColor="@color/red"
-            android:layout_gravity="end"/>
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:text="￥9.9    "
+        android:textColor="@color/red"
+        android:textSize="22sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -88,14 +176,14 @@
         <Button
             android:id="@+id/Collect"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="@drawable/img_collect" />
 
         <Button
             android:id="@+id/Buy"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_weight="9"
             android:text="我要买" />
 
