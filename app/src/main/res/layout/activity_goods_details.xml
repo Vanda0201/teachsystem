@@ -31,15 +31,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="CURRY"
+                android:text="卖家昵称：CURRY"
+                android:textColor="@color/black"
+
                 android:textSize="20dp" />
+
             <TextView
                 android:id="@+id/discribe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="立白洗衣液 买多了，用不完，转，自取，25一盒。共四盒，全部收了可优惠，闲置售出不退
 本交易支持自提、当面交易"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
