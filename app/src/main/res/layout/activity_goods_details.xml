@@ -31,26 +31,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="卖家昵称：CURRY"
+                android:text="高等数学第七版"
                 android:textColor="@color/black"
-
                 android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/discribe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="立白洗衣液 买多了，用不完，转，自取，25一盒。共四盒，全部收了可优惠，闲置售出不退
-本交易支持自提、当面交易"
+                android:text="本书是同济大学数学系编的《高等数学》第七版，从整体上说与第六版没有大的变化,内容深广度符合“工科类本科数学基础课程教学基本要求”，适合高等院校工科类各专业学生使用。"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -60,106 +54,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/exp_goods1" />
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang1" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/exp_good2" />
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang22" />
-                </LinearLayout>
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang22" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="0dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang2" />
-
-                    <!--<android.support.v7.widget.RecyclerView-->
-                    <!--android:id="@+id/img_discribe"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent" />-->
-                </LinearLayout>
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang22" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="0dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang2" />
-
-                    <!--<android.support.v7.widget.RecyclerView-->
-                    <!--android:id="@+id/img_discribe"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent" />-->
-                </LinearLayout>
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang22" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="0dp"
-
-                        android:layout_weight="1"
-                        android:background="@drawable/exp_touxiang2" />
-
-                    <!--<android.support.v7.widget.RecyclerView-->
-                    <!--android:id="@+id/img_discribe"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent" />-->
-                </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/exp_good3" />
             </LinearLayout>
 
     </ScrollView>
