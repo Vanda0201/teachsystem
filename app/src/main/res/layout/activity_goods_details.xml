@@ -31,15 +31,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="高等数学第七版"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/discribe"
+                android:id="@+id/goods_discribe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="本书是同济大学数学系编的《高等数学》第七版，从整体上说与第六版没有大的变化,内容深广度符合“工科类本科数学基础课程教学基本要求”，适合高等院校工科类各专业学生使用。"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -47,6 +45,7 @@
     </LinearLayout>
 
             <ScrollView
+                android:id="@+id/goods_details_img"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="7">
@@ -54,20 +53,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/exp_goods1" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/exp_good2" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/exp_good3" />
             </LinearLayout>
 
     </ScrollView>
@@ -77,7 +62,6 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="end"
-        android:text="￥9.9    "
         android:textColor="@color/red"
         android:textSize="22sp" />
 

@@ -11,4 +11,9 @@
         android:id="@+id/order_header"
         layout="@layout/header_my_order" />
 
+    <ListView
+        android:id="@+id/my_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 </LinearLayout>

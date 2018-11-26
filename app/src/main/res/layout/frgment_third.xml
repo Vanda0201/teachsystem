@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="昵称:探索悦享"
+                android:text="昵称:"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -65,13 +65,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="ID:4008423"
+                android:text="ID:"
                 android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/wodejifen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="积分：100"
+                android:text="积分："
                 android:textColor="@color/black"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"/>
