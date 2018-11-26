@@ -14,7 +14,7 @@ public class Resource_detailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resource_details);
-        //        返回键
+        //返回键
         ImageView mypublishback = (ImageView) findViewById(R.id.title_back);
         Button download =(Button)findViewById(R.id.download_button);
         Button resourceCollect =(Button)findViewById(R.id.resourceCollect);
@@ -24,12 +24,9 @@ public class Resource_detailsActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                     duihuakuang();
                 }
                 private  void duihuakuang(){
@@ -46,19 +43,14 @@ public class Resource_detailsActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialog, int which) {
                         }
                     });
-
-
                     bb.setMessage("你确定要花费2积分下载该文档吗？");
                     bb.setTitle("下载提示");
                     bb.show();
                 }
-
         });
-
         resourceCollect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 duihuakuang();
             }
             private  void duihuakuang(){
@@ -75,17 +67,12 @@ public class Resource_detailsActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                     }
                 });
-
-
                 bb.setMessage("你确定要收藏该文档吗？");
                 bb.setTitle("收藏提示");
                 bb.show();
             }
-
         });
-
     }
-
     }
 
 
