@@ -1,13 +1,11 @@
 package com.example.vanda.share;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -25,12 +23,12 @@ public class RegisterActivity extends AppCompatActivity {
 //            }
 //        });
 
-        Button loginData =(Button) findViewById(R.id.register_button);
+        Button loginData = (Button) findViewById(R.id.register_button);
         loginData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedPreferences.Editor editor = getSharedPreferences("user",MODE_PRIVATE).edit();
-                editor.putString("user_name","Logged");
+                SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
+                editor.putString("user_name", "Logged");
                 editor.apply();
             }
         });

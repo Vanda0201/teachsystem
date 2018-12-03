@@ -7,54 +7,58 @@
 
     <include
         android:id="@+id/resource"
-        layout="@layout/header_resource_details"/>
+        layout="@layout/header_resource_details" />
 
     <TextView
         android:id="@+id/resource_title"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        android:gravity="center"/>
+        android:textSize="20dp" />
 
-     <ScrollView
-         android:layout_width="match_parent"
-         android:layout_height="0dp"
-         android:layout_weight="8">
-    <TextView
-        android:id="@+id/preview"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-     </ScrollView>
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black" />
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/resourceCollect"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/img_collect"/>
-    <Button
-        android:id="@+id/download_button"
-        android:layout_width="0dp"
-        android:layout_weight="9"
-        android:layout_height="@dimen/login_comfirm_button_height"
-       android:layout_marginBottom="12dp"
-        android:layout_below="@id/login_editor_layout"
-        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
-        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
-        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
-        android:background="@drawable/button_b_login"
-        android:gravity="center"
-        android:text="下载文档"
-        android:textColor="@color/white"
-        android:textSize="@dimen/login_comfirm_button_text_size"/>
+            android:layout_weight="1"
+            android:background="@drawable/img_collect" />
+
+        <Button
+            android:id="@+id/download_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_comfirm_button_height"
+            android:layout_below="@id/login_editor_layout"
+            android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+            android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+            android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="9"
+            android:background="@drawable/button_b_login"
+            android:gravity="center"
+            android:text="下载文档"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_comfirm_button_text_size" />
     </LinearLayout>
 
 </LinearLayout>

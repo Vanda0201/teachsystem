@@ -11,14 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
-
-
-
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ThirdFragment extends Fragment {
-
 
 
     public ThirdFragment() {
@@ -55,10 +51,10 @@ public class ThirdFragment extends Fragment {
         collection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if (Util.isLogin(getContext())) {
+                if (Util.isLogin(getContext())) {
                     startActivity(new Intent(getContext(), CollectionActivity.class));
                 } else {
-                   startActivity(new Intent(getContext(), LoginActivity.class));
+                    startActivity(new Intent(getContext(), LoginActivity.class));
                 }
 
             }
@@ -104,7 +100,7 @@ public class ThirdFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                    startActivity(new Intent(getContext(), ContactUsActivity.class));
+                startActivity(new Intent(getContext(), ContactUsActivity.class));
 
 
             }
@@ -124,7 +120,3 @@ public class ThirdFragment extends Fragment {
         return view;
     }
 }
-
-
-
-

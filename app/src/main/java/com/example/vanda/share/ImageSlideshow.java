@@ -1,4 +1,5 @@
 package com.example.vanda.share;
+
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.content.Context;
@@ -15,7 +16,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,12 +100,14 @@ public class ImageSlideshow extends FrameLayout {
         imageTitleBean.setImageUrl(imageUrl);
         imageTitleBeanList.add(imageTitleBean);
     }
+
     public void addImageId(int imageId) {
         ImageTitleBean imageTitleBean = new ImageTitleBean();
 //        imageTitleBean.setImageUrl(imageUrl);
         imageTitleBean.setImageId(imageId);
         imageTitleBeanList.add(imageTitleBean);
     }
+
     // 添加图片和标题
     public void addImageTitle(String imageUrl, String title) {
         ImageTitleBean imageTitleBean = new ImageTitleBean();
@@ -113,12 +115,14 @@ public class ImageSlideshow extends FrameLayout {
         imageTitleBean.setTitle(title);
         imageTitleBeanList.add(imageTitleBean);
     }
+
     public void addImageTitleWithId(int imageUrl, String title) {
         ImageTitleBean imageTitleBean = new ImageTitleBean();
         imageTitleBean.setImageId(imageUrl);
         imageTitleBean.setTitle(title);
         imageTitleBeanList.add(imageTitleBean);
     }
+
     // 添加图片和标题的JavaBean
     public void addImageTitleBean(ImageTitleBean imageTitleBean) {
         imageTitleBeanList.add(imageTitleBean);
@@ -333,7 +337,7 @@ public class ImageSlideshow extends FrameLayout {
             } else {
 //                Glide.with(context).
 //                        load(imageTitleBeanList.get(i - 1).getImageUrl()).into(ivImage);
-                ivImage.setImageResource(imageTitleBeanList.get(i-1).getImageId());
+                ivImage.setImageResource(imageTitleBeanList.get(i - 1).getImageId());
                 tvTitle.setText(imageTitleBeanList.get(i - 1).getTitle());
             }
             // 将设置好的View添加到View列表中

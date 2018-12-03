@@ -16,7 +16,7 @@ public class Goods_detailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_goods_details);
 //        返回键
         ImageView mypublishback = (ImageView) findViewById(R.id.title_back);
-        Button buy = (Button)findViewById(R.id.download_buy);
+        Button buy = (Button) findViewById(R.id.download_buy);
         mypublishback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,8 @@ public class Goods_detailsActivity extends AppCompatActivity {
 
                 duihuakuang();
             }
-            private  void duihuakuang(){
+
+            private void duihuakuang() {
                 AlertDialog.Builder bb = new AlertDialog.Builder(Goods_detailsActivity.this);
 
                 bb.setPositiveButton("确定购买", new DialogInterface.OnClickListener() {

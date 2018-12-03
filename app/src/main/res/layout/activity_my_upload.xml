@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CollectionActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".CollectionActivity">
 
     <include
         android:id="@+id/collection_header"
@@ -14,7 +13,5 @@
     <ListView
         android:id="@+id/my_upload_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
-
+        android:layout_height="match_parent"></ListView>
 </LinearLayout>

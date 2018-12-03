@@ -1,7 +1,7 @@
 package com.example.vanda.share;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -12,7 +12,7 @@ public class LifeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life);
         ImageView lifeback = (ImageView) findViewById(R.id.title_back);
-         lifeback.setOnClickListener(new View.OnClickListener() {
+        lifeback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

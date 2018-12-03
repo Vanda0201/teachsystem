@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ExamActivity">
+
     <RelativeLayout
         android:id="@+id/common_title"
         android:layout_width="fill_parent"
         android:layout_height="50.0dip"
         android:background="@drawable/common_title_background">
+
         <ImageView
             android:id="@+id/title_back"
             android:layout_width="wrap_content"
@@ -19,7 +21,7 @@
             android:layout_gravity="center_vertical"
             android:paddingLeft="15.0dip"
             android:paddingRight="5.0dip"
-            android:src="@drawable/common_title_back_selector"/>
+            android:src="@drawable/common_title_back_selector" />
 
         <TextView
             android:id="@+id/titleText"
@@ -33,7 +35,7 @@
             android:singleLine="true"
             android:text="考研资源"
             android:textColor="@color/common_title_text_color"
-            android:textSize="17.0sp"/>
+            android:textSize="17.0sp" />
     </RelativeLayout>
 
 </RelativeLayout>

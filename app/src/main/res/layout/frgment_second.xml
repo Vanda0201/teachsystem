@@ -139,9 +139,8 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/classify"
                 android:layout_width="0dp"
-                android:layout_weight="8"
-                android:layout_height="match_parent">
-            </android.support.v7.widget.RecyclerView>
+                android:layout_height="match_parent"
+                android:layout_weight="8"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
     </LinearLayout>
 

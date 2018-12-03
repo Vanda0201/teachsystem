@@ -24,6 +24,7 @@ import java.util.List;
 public class FirstFragment extends Fragment {
     ImageSlideshow imageSlideshow;
     private ViewFlipper view_flipper;
+
     public FirstFragment() {
         // Required empty public constructor
     }
@@ -72,10 +73,6 @@ public class FirstFragment extends Fragment {
 
             }
         });
-
-
-
-
 
 
         kuaidi.setOnClickListener(new View.OnClickListener() {
@@ -137,7 +134,7 @@ public class FirstFragment extends Fragment {
 //                "http://pic2.zhimg.com/be6f444c9c8bc03baa8d79cecae40961.jpg",
 //                "http://pic1.zhimg.com/b6f59c017b43937bb85a81f9269b1ae8.jpg",
 //                "http://pic2.zhimg.com/a62f9985cae17fe535a99901db18eba9.jpg"};
-        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4,R.drawable.ex_5,R.drawable.ex_6};
+        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4, R.drawable.ex_5, R.drawable.ex_6};
         String[] titles = {"",
                 "",
                 "",
@@ -148,8 +145,8 @@ public class FirstFragment extends Fragment {
         };
         for (int i = 0; i < 6; i++) {
 //            imageSlideshow.addImageTitle(imageUrls[i], titles[i]);
-           imageSlideshow.addImageTitleWithId(imageIds[i], titles[i]);
-           // imageSlideshow.addImageId(imageIds[i]);
+            imageSlideshow.addImageTitleWithId(imageIds[i], titles[i]);
+            // imageSlideshow.addImageId(imageIds[i]);
 
         }
     }
@@ -164,23 +161,24 @@ public class FirstFragment extends Fragment {
     private void initView() {
 
 
-        String[] imageId = new String[]{"1", "2","3","4","5"};
+        String[] imageId = new String[]{"1", "2", "3", "4", "5"};
 
         List<String> data = getNews();
-       for(String news : data){
+        for (String news : data) {
 
-            View view = getLayoutInflater().inflate(R.layout.item_flipper,null);
-            TextView textView =  view.findViewById(R.id.tv);
+            View view = getLayoutInflater().inflate(R.layout.item_flipper, null);
+            TextView textView = view.findViewById(R.id.tv);
 
             textView.setText(news);
-            textView.setTextColor(Color.rgb(0,0,0));
+            textView.setTextColor(Color.rgb(0, 0, 0));
             view_flipper.addView(view);
-       }
+        }
         view_flipper.setFlipInterval(3000);
         view_flipper.startFlipping();
 
     }
-    private List<String> getNews(){
+
+    private List<String> getNews() {
         List<String> news = new ArrayList<String>();
         news.add("探索悦享，一起成为仰望星空的人");
         news.add("2019计算机等级考试--你报名了吗？");
@@ -190,11 +188,12 @@ public class FirstFragment extends Fragment {
 
         return news;
     }
+
     private void setTypeface(View view) {
         //获取控件
-        TextView tv_main_text= (TextView) view.findViewById(R.id.Share);
+        TextView tv_main_text = (TextView) view.findViewById(R.id.Share);
         //设置字体
-        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(), "fonts/LoveLight.ttf");
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "fonts/LoveLight.ttf");
         tv_main_text.setTypeface(typeface);
 
     }

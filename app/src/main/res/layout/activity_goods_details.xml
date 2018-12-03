@@ -44,16 +44,16 @@
         </LinearLayout>
     </LinearLayout>
 
-            <ScrollView
-                android:id="@+id/goods_details_img"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="7">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            </LinearLayout>
+    <ScrollView
+        android:id="@+id/goods_details_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
 
     </ScrollView>
 
@@ -68,27 +68,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/buy"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/img_collect"/>
+            android:layout_weight="1"
+            android:background="@drawable/img_collect" />
+
         <Button
             android:id="@+id/download_buy"
             android:layout_width="0dp"
-            android:layout_weight="9"
             android:layout_height="@dimen/login_comfirm_button_height"
-            android:layout_marginBottom="12dp"
             android:layout_below="@id/login_editor_layout"
             android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
-            android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
             android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+            android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="9"
             android:background="@drawable/button_b_login"
             android:gravity="center"
             android:text="购买"
             android:textColor="@color/white"
-            android:textSize="@dimen/login_comfirm_button_text_size"/>
+            android:textSize="@dimen/login_comfirm_button_text_size" />
     </LinearLayout>
 </LinearLayout>

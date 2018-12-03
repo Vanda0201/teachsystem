@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,10 +21,12 @@ import java.util.List;
  */
 public class SecondFragment extends Fragment {
     RecyclerView recyclerView;
-    List<GoodsItem> goodsList ;
+    List<GoodsItem> goodsList;
+
     public SecondFragment() {
         // Required empty public constructor
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,19 +36,19 @@ public class SecondFragment extends Fragment {
         shangchuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(),PublishActivity.class));
+                startActivity(new Intent(getContext(), PublishActivity.class));
             }
         });
 
 
         goodsList = new ArrayList<GoodsItem>();
         final GoodsAdapter goodsAdapter = new GoodsAdapter(goodsList);
-        LinearLayoutManager layoutManager  = new LinearLayoutManager(getContext());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView = view.findViewById(R.id.classify);
         recyclerView.setAdapter(goodsAdapter);
         recyclerView.setLayoutManager(layoutManager);
 
-        LinearLayout recommendLayout = (LinearLayout)view.findViewById(R.id.recommend);
+        LinearLayout recommendLayout = (LinearLayout) view.findViewById(R.id.recommend);
         recommendLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,11 +59,12 @@ public class SecondFragment extends Fragment {
 
         return view;
     }
-    List<GoodsItem> getRecommendData(){
+
+    List<GoodsItem> getRecommendData() {
         List<GoodsItem> result = new ArrayList<GoodsItem>();
-        result.add(new GoodsItem("http://","apple"));
-        result.add(new GoodsItem("http://","apple"));
-        result.add(new GoodsItem("http://","apple"));
+        result.add(new GoodsItem("http://", "apple"));
+        result.add(new GoodsItem("http://", "apple"));
+        result.add(new GoodsItem("http://", "apple"));
         return result;
     }
 }

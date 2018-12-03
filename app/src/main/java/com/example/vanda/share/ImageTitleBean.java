@@ -1,4 +1,5 @@
 package com.example.vanda.share;
+
 public class ImageTitleBean {
 
     private String imageUrl;

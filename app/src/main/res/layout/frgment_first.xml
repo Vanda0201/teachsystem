@@ -210,9 +210,9 @@
                         android:id="@+id/text_view_flipper"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginStart="15dp"
                         android:text="悦享头条"
-                        android:layout_gravity="center"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -401,10 +401,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
         android:src="@drawable/img_add"
         app:backgroundTint="#ACDBDF"
-        android:layout_margin="16dp"
-        app:rippleColor="#e7edef">
-    </android.support.design.widget.FloatingActionButton>
+        app:rippleColor="#e7edef"></android.support.design.widget.FloatingActionButton>
 
 </android.support.design.widget.CoordinatorLayout>

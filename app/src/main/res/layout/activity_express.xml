@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpressActivity"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".ExpressActivity">
 
     <RelativeLayout
         android:id="@+id/common_title"

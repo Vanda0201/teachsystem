@@ -7,7 +7,7 @@
         android:propertyName="scaleX"
         android:valueFrom="1.5"
         android:valueTo="1.0"
-        android:valueType="floatType"/>
+        android:valueType="floatType" />
     <objectAnimator
         android:duration="150"
         android:pivotX="50%"
@@ -15,5 +15,5 @@
         android:propertyName="scaleY"
         android:valueFrom="1.5"
         android:valueTo="1.0"
-        android:valueType="floatType"/>
+        android:valueType="floatType" />
 </set>

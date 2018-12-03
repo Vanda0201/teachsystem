@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <RelativeLayout
         android:id="@+id/common_title"
         android:layout_width="fill_parent"
@@ -31,6 +32,6 @@
             android:singleLine="true"
             android:text="考 证"
             android:textColor="@color/common_title_text_color"
-            android:textSize="17.0sp"/>
+            android:textSize="17.0sp" />
     </RelativeLayout>
 </RelativeLayout>
