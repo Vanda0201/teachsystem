@@ -54,17 +54,17 @@ public class CertificateActivity extends AppCompatActivity {
         List<Fruit> datas = new ArrayList<Fruit>();
         datas.add(new Fruit(R.drawable.exp_touxiang1, "淮师一枝花"));
         datas.add(new Fruit(R.drawable.exp_touxiang2, "402-1扛把子"));
-        datas.add(new Fruit(R.drawable.exp_apple, "皮皮虾"));
-        datas.add(new Fruit(R.drawable.exp_apple, "七彩宝龙"));
-        datas.add(new Fruit(R.drawable.img_express, "ABaby"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
-        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang11, "皮皮虾"));
+        datas.add(new Fruit(R.drawable.exp_touxiang12, "七彩宝龙"));
+        datas.add(new Fruit(R.drawable.exp_touxiang22, "ABaby"));
+        datas.add(new Fruit(R.drawable.exp_touxiang21, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang19, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang18, "banana"));
+        datas.add(new Fruit(R.drawable.exp_touxiang16, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang15, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang20, "banana"));
+        datas.add(new Fruit(R.drawable.exp_touxiang2, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang20, "Apple"));
         datas.add(new Fruit(R.drawable.exp_apple, "banana"));
 
         return datas;
