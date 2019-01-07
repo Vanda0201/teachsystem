@@ -11,27 +11,27 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class FruitAdapter extends ArrayAdapter<Fruit> {
+public class CertificateListAdapter extends ArrayAdapter {
 
     private int resource_id;
 
-    public FruitAdapter(Context context, int textViewResourceId, List<Fruit> objects) {
-        super(context, textViewResourceId, objects);
+    public CertificateListAdapter(Context context, int textViewResourceId, List<CertificateList> objects) {
+         super(context, textViewResourceId, objects);
         resource_id = textViewResourceId;
     }
 
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Fruit fruit = getItem(position);
+        CertificateListAdapter certificateListAdapter = (CertificateListAdapter) getItem(position);
         View view = LayoutInflater.from(getContext()).inflate(resource_id, parent, false);
         ImageView imageView = view.findViewById(R.id.imageView);
 
         TextView textView = view.findViewById(R.id.textView);
 
-        imageView.setImageResource(fruit.getImage_id());
+        imageView.setImageResource(CertificateList.getImage_id());
 
-        textView.setText(fruit.getName());
+        textView.setText(CertificateList.getName());
 
 
         return view;

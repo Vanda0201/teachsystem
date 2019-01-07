@@ -2,21 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_widtKDh="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".CertificateActivity" android:layout_width="wrap_content">
 
+    <include
+        android:id="@+id/certificate_header"
+        layout="@layout/header_certificate" />
 
-<<<<<<< Updated upstream
     <SearchView
         android:id="@+id/search_certificate"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ffffff" />
-=======
->>>>>>> Stashed changes
+
     <!--轮播图-->
     <ImageView
         android:id="@+id/dot"
@@ -118,10 +118,10 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="400dp"
+        android:background="#ffffff"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/ntce"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ListView>
