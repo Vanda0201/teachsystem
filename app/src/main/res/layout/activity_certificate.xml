@@ -9,7 +9,6 @@
     tools:context=".CertificateActivity" android:layout_width="wrap_content">
 
 
-<<<<<<< Updated upstream
     <SearchView
         android:id="@+id/search_certificate"
         android:layout_width="match_parent"
