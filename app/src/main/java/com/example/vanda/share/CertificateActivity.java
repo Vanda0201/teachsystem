@@ -32,7 +32,7 @@ public class CertificateActivity extends AppCompatActivity {
         });
 
 
-        List<CertificateList> datas = initData();
+        List<Fruit> datas = initData();
         listView = (ListView) findViewById(R.id.listView);
         //跳转到资源详情
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -45,13 +45,27 @@ public class CertificateActivity extends AppCompatActivity {
 
 
 //       ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
-        CertificateListAdapter adapter = new CertificateListAdapter(CertificateActivity.this, R.layout.certificate_list_item, datas);
+        FruitAdapter adapter = new FruitAdapter(CertificateActivity.this, R.layout.fruit_item, datas);
         listView.setAdapter(adapter);
     }
 
 
-    private List<CertificateList> initData() {
-        List<CertificateList> datas = new ArrayList<CertificateList>();
+    private List<Fruit> initData() {
+        List<Fruit> datas = new ArrayList<Fruit>();
+        datas.add(new Fruit(R.drawable.exp_touxiang1, "淮师一枝花"));
+        datas.add(new Fruit(R.drawable.exp_touxiang2, "402-1扛把子"));
+        datas.add(new Fruit(R.drawable.exp_touxiang11, "皮皮虾"));
+        datas.add(new Fruit(R.drawable.exp_touxiang12, "七彩宝龙"));
+        datas.add(new Fruit(R.drawable.exp_touxiang22, "ABaby"));
+        datas.add(new Fruit(R.drawable.exp_touxiang21, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang19, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang18, "banana"));
+        datas.add(new Fruit(R.drawable.exp_touxiang16, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang15, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang20, "banana"));
+        datas.add(new Fruit(R.drawable.exp_touxiang2, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_touxiang20, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
 
         return datas;
 

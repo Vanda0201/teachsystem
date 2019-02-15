@@ -1,17 +1,17 @@
 package com.example.vanda.share;
 
-class ExamList {
+class Fruit {
     private int image_id;
     private String name;
 
-    public ExamList(int image_id, String name) {
+    public Fruit(int image_id, String name) {
         this.image_id = image_id;
         this.name = name;
     }
 
-    public static int getImage_id() {
+    public int getImage_id() {
 
-        return getImage_id();
+        return image_id;
     }
 
 
@@ -21,8 +21,7 @@ class ExamList {
     }
 
 
-    public static String getName() {
-
-        return getName();
+    public String getName() {
+        return name;
     }
 }

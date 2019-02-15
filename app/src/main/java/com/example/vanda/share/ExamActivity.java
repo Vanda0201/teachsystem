@@ -31,18 +31,33 @@ public class ExamActivity extends AppCompatActivity {
         });
 
 
-        List<ExamList> datas = initData();
+        List<Fruit> datas = initData();
         listView = (ListView) findViewById(R.id.listView);
 
 
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
-        ExamListAdapter adapter = new ExamListAdapter(ExamActivity.this, R.layout.exam_list_item, datas);
+        FruitAdapter adapter = new FruitAdapter(ExamActivity.this, R.layout.fruit_item, datas);
         listView.setAdapter(adapter);
     }
 
 
-    private List<ExamList> initData() {
-        List<ExamList> datas = new ArrayList<ExamList>();
+    private List<Fruit> initData() {
+        List<Fruit> datas = new ArrayList<Fruit>();
+        datas.add(new Fruit(R.drawable.exp_touxiang1, "淮师一枝花"));
+        datas.add(new Fruit(R.drawable.exp_touxiang2, "402-1扛把子"));
+        datas.add(new Fruit(R.drawable.exp_apple, "皮皮虾"));
+        datas.add(new Fruit(R.drawable.exp_apple, "七彩宝龙"));
+        datas.add(new Fruit(R.drawable.img_express, "ABaby"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "Apple"));
+        datas.add(new Fruit(R.drawable.exp_apple, "banana"));
+
         return datas;
 
     }
