@@ -16,7 +16,7 @@ public class CertificateListAdapter extends ArrayAdapter {
     private int resource_id;
 
     public CertificateListAdapter(Context context, int textViewResourceId, List<CertificateList> objects) {
-         super(context, textViewResourceId, objects);
+        super(context, textViewResourceId, objects);
         resource_id = textViewResourceId;
     }
 
