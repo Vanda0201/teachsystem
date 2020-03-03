@@ -10,7 +10,7 @@ public class LifeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_life);
+        setContentView(R.layout.activity_pass);
         ImageView lifeback = (ImageView) findViewById(R.id.title_back);
         lifeback.setOnClickListener(new View.OnClickListener() {
             @Override

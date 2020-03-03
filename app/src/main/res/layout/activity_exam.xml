@@ -8,9 +8,7 @@
     android:orientation="vertical"
     tools:context=".CertificateActivity">
 
-    <include
-        android:id="@+id/certificate_header"
-        layout="@layout/header_exam" />
+    <include layout="@layout/header_exam" />
 
     <SearchView
         android:id="@+id/search_certificate"

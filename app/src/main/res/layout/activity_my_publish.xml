@@ -6,12 +6,9 @@
     android:orientation="vertical"
     tools:context=".CollectionActivity">
 
-    <include
-        android:id="@+id/collection_header"
-        layout="@layout/header_my_publish" />
+    <include layout="@layout/header_my_publish" />
 
     <ListView
-        android:id="@+id/my_publish_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
 </LinearLayout>

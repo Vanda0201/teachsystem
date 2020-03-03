@@ -4,7 +4,6 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/ex_resource"
         android:layout_width="match_parent"
         android:layout_height="80dp">
 

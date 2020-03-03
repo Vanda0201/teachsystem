@@ -26,13 +26,12 @@
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
             android:layout_gravity="center_vertical"
             android:ellipsize="end"
             android:maxWidth="180.0dip"
             android:singleLine="true"
-            android:text="听说了吗"
+            android:text="今日任务"
             android:textColor="@color/common_title_text_color"
             android:textSize="17.0sp" />
     </RelativeLayout>

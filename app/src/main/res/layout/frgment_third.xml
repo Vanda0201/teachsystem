@@ -39,7 +39,6 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/touxiang"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -53,7 +52,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/nichen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -62,7 +60,6 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/idhao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -71,7 +68,6 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/wodejifen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

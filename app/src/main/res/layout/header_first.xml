@@ -1,10 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/product_list_top_layout"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/search_layout"
         android:layout_width="fill_parent"
         android:layout_height="50.0dip"
         android:background="@drawable/common_title_background"
@@ -15,12 +13,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="   share"
+            android:text="  悦享教务"
             android:textColor="@color/black"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
 
         <SearchView
-            android:id="@+id/msearch"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -30,7 +27,6 @@
             android:iconifiedByDefault="false" />
 
         <TextView
-            android:id="@+id/text_search_resource"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"

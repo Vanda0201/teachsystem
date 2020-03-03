@@ -34,10 +34,9 @@ public class FirstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.frgment_first, container, false);
+        View view ;
         view = inflater.inflate(R.layout.frgment_first, container, false);
-        LinearLayout kaozhengimage = view.findViewById(R.id.zhengshu);
-        ImageButton shangchuan = view.findViewById(R.id.uploadbutton);
+        LinearLayout kaozhengimage = view.findViewById(R.id.shenpi);
         LinearLayout kaoshi = view.findViewById(R.id.exam);
         LinearLayout kaoyan = view.findViewById(R.id.postgraduate);
         LinearLayout kuaidi = view.findViewById(R.id.express);
@@ -51,12 +50,6 @@ public class FirstFragment extends Fragment {
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), CertificateActivity.class));
 
-            }
-        });
-        shangchuan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), UploadActivity.class));
             }
         });
         kaoshi.setOnClickListener(new View.OnClickListener() {
@@ -181,10 +174,10 @@ public class FirstFragment extends Fragment {
     private List<String> getNews() {
         List<String> news = new ArrayList<String>();
         news.add("探索悦享，一起成为仰望星空的人");
-        news.add("2019计算机等级考试--你报名了吗？");
+        news.add("今天也要努力工作！");
         news.add("官宣！--悦享只是想蹭个热度");
         news.add("悦享，互动分享资源新选择！");
-        news.add("2018四六级--你准备好了吗？");
+        news.add("今天的你准备好了吗？");
 
         return news;
     }

@@ -16,9 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <include
-                android:id="@+id/goods_details"
-                layout="@layout/header_goods_details" />
+            <include layout="@layout/header_goods_details" />
         </RelativeLayout>
 
         <LinearLayout
@@ -27,7 +25,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Ziyuan_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -35,7 +32,6 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/goods_discribe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="viewStart"
@@ -45,7 +41,6 @@
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/goods_details_img"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7">
@@ -58,7 +53,6 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="end"
@@ -70,7 +64,6 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/buy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"

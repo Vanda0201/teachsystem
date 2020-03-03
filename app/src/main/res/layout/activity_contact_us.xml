@@ -7,12 +7,9 @@
     android:orientation="vertical"
     tools:context=".ContactUsActivity">
 
-    <include
-        android:id="@+id/contact_us_header"
-        layout="@layout/header_contact_us" />
+    <include layout="@layout/header_contact_us" />
 
     <TextView
-        android:id="@+id/contact_information"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="官方QQ:\n\n官方微信公众号："

@@ -12,9 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/secondheader"
-            layout="@layout/header_second" />
+        <include layout="@layout/header_second" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +34,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_recommend"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="推荐"
@@ -45,7 +42,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/idle_book"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="0.5dp"
@@ -54,7 +50,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_idle_book"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="闲书"
@@ -63,7 +58,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/digital"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="0.5dp"
@@ -72,7 +66,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_digital"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="电子\n数码"
@@ -81,7 +74,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/sport"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="0.5dp"
@@ -90,7 +82,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_sport"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="运动"
@@ -99,7 +90,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/bedding"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="0.5dp"
@@ -108,7 +98,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_bedding"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="寝室\n用品"
@@ -117,7 +106,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/cosmetics"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="0.5dp"
@@ -126,7 +114,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_cosmetics"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="美妆"

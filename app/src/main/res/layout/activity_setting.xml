@@ -7,9 +7,7 @@
     android:orientation="vertical"
     tools:context=".SettingActivity">
 
-    <include
-        android:id="@+id/setting_header"
-        layout="@layout/header_setting" />
+    <include layout="@layout/header_setting" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +16,6 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/nick_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -26,7 +23,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/view_nick_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
@@ -34,7 +30,6 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/edit_nick_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
@@ -44,7 +39,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -52,7 +46,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/view_a"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
@@ -61,7 +54,6 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/edit_a"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
@@ -71,7 +63,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -79,7 +70,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/view_b"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
@@ -88,7 +78,6 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/edit_b"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
@@ -98,7 +87,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/c"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -115,7 +103,6 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/edit_c"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
@@ -125,7 +112,6 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
