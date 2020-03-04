@@ -13,7 +13,7 @@ public class Goods_detailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_goods_details);
+        setContentView(R.layout.activity_details);
 //        返回键
         ImageView mypublishback = (ImageView) findViewById(R.id.title_back);
         Button buy = (Button) findViewById(R.id.download_buy);

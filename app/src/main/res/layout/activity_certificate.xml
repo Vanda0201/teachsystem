@@ -126,14 +126,5 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:src="@drawable/img_add"
-        app:backgroundTint="#ACDBDF"
-        app:rippleColor="#e7edef"></android.support.design.widget.FloatingActionButton>
-
 
 </android.support.design.widget.CoordinatorLayout>

@@ -48,15 +48,6 @@ public class SecondFragment extends Fragment {
         recyclerView.setAdapter(goodsAdapter);
         recyclerView.setLayoutManager(layoutManager);
 
-        LinearLayout recommendLayout = (LinearLayout) view.findViewById(R.id.recommend);
-        recommendLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goodsList = getRecommendData();
-                goodsAdapter.notifyDataSetChanged();
-            }
-        });
-
         return view;
     }
 

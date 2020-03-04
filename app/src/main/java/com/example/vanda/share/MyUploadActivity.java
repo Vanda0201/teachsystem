@@ -10,7 +10,7 @@ public class MyUploadActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_upload);
+        setContentView(R.layout.activity_my_file);
         //返回键
         ImageView myuploadback = (ImageView) findViewById(R.id.title_back);
         myuploadback.setOnClickListener(new View.OnClickListener() {

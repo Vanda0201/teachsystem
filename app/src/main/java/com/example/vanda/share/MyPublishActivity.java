@@ -10,7 +10,7 @@ public class MyPublishActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_publish);
+        setContentView(R.layout.activity_my_notice);
         //返回键
         ImageView mypublishback = (ImageView) findViewById(R.id.title_back);
         mypublishback.setOnClickListener(new View.OnClickListener() {

@@ -6,7 +6,16 @@
     android:orientation="vertical"
     tools:context=".CollectionActivity">
 
-    <include layout="@layout/header_my_order" />
+    <include layout="@layout/header_my_notice" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="false"
+        android:iconifiedByDefault="false"
+        android:queryHint="搜索公告" />
 
     <ListView
         android:layout_width="match_parent"

@@ -112,7 +112,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
-                android:text="  我的订单"
+                android:text="  我的任务"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
                 android:background="#ffffff"
-                android:text="  我的上传"
+                android:text="  我的文件"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -206,7 +206,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
-                android:text="  我的发布"
+                android:text="  我的公告"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 

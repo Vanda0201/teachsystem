@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <include layout="@layout/header_goods_details" />
+            <include layout="@layout/header_details" />
         </RelativeLayout>
 
         <LinearLayout
@@ -82,7 +82,7 @@
             android:layout_weight="9"
             android:background="@drawable/button_b_login"
             android:gravity="center"
-            android:text="购买"
+            android:text="下载"
             android:textColor="@color/white"
             android:textSize="@dimen/login_comfirm_button_text_size" />
     </LinearLayout>
