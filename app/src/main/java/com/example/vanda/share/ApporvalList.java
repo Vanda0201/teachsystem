@@ -1,10 +1,10 @@
 package com.example.vanda.share;
 
-class CertificateList {
+class ApporvalList {
     private int image_id;
     private String name;
 
-    public CertificateList(int image_id, String name) {
+    public ApporvalList(int image_id, String name) {
         this.image_id = image_id;
         this.name = name;
     }

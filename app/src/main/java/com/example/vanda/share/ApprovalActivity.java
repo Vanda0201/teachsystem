@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -15,15 +13,24 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CertificateActivity extends AppCompatActivity {
+public class ApprovalActivity extends AppCompatActivity {
 
     private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_certificate);
+        setContentView(R.layout.activity_approval);
 
+        //提交审批按钮
+        ImageView subapproval = (ImageView)findViewById(R.id.approval_button);
+        subapproval.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),SubmitApporvalActivity.class);
+                startActivity(intent);
+            }
+        });
         //从该activity跳转回首页的fragment
         ImageView backBtn = (ImageView) findViewById(R.id.certificateback);
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +41,7 @@ public class CertificateActivity extends AppCompatActivity {
         });
 
 
-        List<CertificateList> datas = initData();
+        List<ApporvalList> datas = initData();
         listView = (ListView) findViewById(R.id.listView);
         //跳转到资源详情
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -45,15 +52,14 @@ public class CertificateActivity extends AppCompatActivity {
             }
         });
 
-
 //       ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
-        CertificateListAdapter adapter = new CertificateListAdapter(CertificateActivity.this, R.layout.certificate_list_item, datas);
+        ApprovalListAdapter adapter = new ApprovalListAdapter(ApprovalActivity.this, R.layout.certificate_list_item, datas);
         listView.setAdapter(adapter);
     }
 
 
-    private List<CertificateList> initData() {
-        List<CertificateList> datas = new ArrayList<CertificateList>();
+    private List<ApporvalList> initData() {
+        List<ApporvalList> datas = new ArrayList<ApporvalList>();
 
         return datas;
 
@@ -64,7 +70,7 @@ public class CertificateActivity extends AppCompatActivity {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 String name = data.getStringExtra("name");
-                Toast.makeText(CertificateActivity.this, name, Toast.LENGTH_LONG).show();
+                Toast.makeText(ApprovalActivity.this, name, Toast.LENGTH_LONG).show();
             }
         }
     }

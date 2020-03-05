@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context=".CertificateActivity">
+    tools:context=".ApprovalActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,9 @@
         android:background="@drawable/background"
         android:orientation="vertical">
 
-        <include layout="@layout/header_certificate" />
+        <include
+            layout="@layout/header_approval"
+            android:background="#2196F3" />
 
         <SearchView
             android:id="@+id/search_certificate"
@@ -121,10 +123,21 @@
             android:background="#ffffff"
             app:layout_constraintBottom_toTopOf="@+id/ntce"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ListView>
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </ListView>
 
 
     </LinearLayout>
 
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/approval_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_add"
+        app:backgroundTint="#ACDBDF"
+        app:rippleColor="#E7EDEF" />
 </android.support.design.widget.CoordinatorLayout>
