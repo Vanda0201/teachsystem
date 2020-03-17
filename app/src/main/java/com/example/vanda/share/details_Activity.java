@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Goods_detailsActivity extends AppCompatActivity {
+public class details_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Goods_detailsActivity extends AppCompatActivity {
             }
 
             private void duihuakuang() {
-                AlertDialog.Builder bb = new AlertDialog.Builder(Goods_detailsActivity.this);
+                AlertDialog.Builder bb = new AlertDialog.Builder(details_Activity.this);
 
                 bb.setPositiveButton("确定购买", new DialogInterface.OnClickListener() {
                     @Override

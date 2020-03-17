@@ -19,7 +19,7 @@
         <activity
             android:name=".Resource_detailsActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Goods_detailsActivity" />
+        <activity android:name=".details_Activity" />
         <activity android:name=".PublishActivity" />
         <activity android:name=".ApprovalActivity" />
         <activity android:name=".UploadActivity" />
