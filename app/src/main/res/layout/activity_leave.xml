@@ -215,7 +215,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/submit_button"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/login_comfirm_button_height"
                 android:layout_below="@id/login_editor_layout"
@@ -224,7 +224,7 @@
                 android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
                 android:background="@drawable/button_b_login"
                 android:gravity="center"
-                android:text="登 录"
+                android:text="提  交"
                 android:textColor="@color/white"
                 android:textSize="@dimen/login_comfirm_button_text_size"/>
         </LinearLayout>

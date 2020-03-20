@@ -1,9 +1,11 @@
 package com.example.vanda.share;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,6 +37,18 @@ public class LeaveActivity extends AppCompatActivity implements View.OnClickList
         begin_time.setOnClickListener(this);
         end_time = (TextView)findViewById(R.id.end_time);
         end_time.setOnClickListener(this);
+
+        //提交后回到审批页
+        AppManager.getAppManager().addActivity(this);
+        Button submit = (Button)findViewById(R.id.submit_button);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AppManager.getAppManager().finishActivity(LeaveActivity.class);
+                AppManager.getAppManager().finishActivity(SubmitApporvalActivity.class);
+                finish();
+            }
+        });
     }
 
     //获取当前日期

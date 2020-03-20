@@ -16,6 +16,9 @@ import java.util.List;
 public class ApprovalActivity extends AppCompatActivity {
 
     private ListView listView;
+    private int requestCode;
+    private int resultCode;
+    private Intent data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,39 +44,38 @@ public class ApprovalActivity extends AppCompatActivity {
         });
 
 
-        List<ApporvalList> datas = initData();
+        /*List<ApporvalList> datas = initData();*/
         listView = (ListView) findViewById(R.id.listView);
         //跳转到资源详情
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(), Resource_detailsActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent,1);
             }
         });
 
-//       ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
+/*       ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivityceshi.this,android.R.layout.simple_list_item_1,array_data);
         ApprovalListAdapter adapter = new ApprovalListAdapter(ApprovalActivity.this, R.layout.certificate_list_item, datas);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
     }
 
-
-    private List<ApporvalList> initData() {
+   /* private List<ApporvalList> initData() {
         List<ApporvalList> datas = new ArrayList<ApporvalList>();
 
         return datas;
 
-    }
+    }*/
 
 
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    /*protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 String name = data.getStringExtra("name");
                 Toast.makeText(ApprovalActivity.this, name, Toast.LENGTH_LONG).show();
             }
         }
-    }
+    }*/
 
 
 }
