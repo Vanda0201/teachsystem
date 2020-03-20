@@ -15,7 +15,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubmitApporvalActivity"></activity>
+        <activity android:name=".LeaveActivity"></activity>
+        <activity android:name=".SubmitApporvalActivity" />
         <activity
             android:name=".Resource_detailsActivity"
             android:theme="@style/AppTheme" />
