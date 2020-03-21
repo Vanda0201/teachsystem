@@ -126,7 +126,7 @@ public class FirstFragment extends Fragment {
 //                "http://pic2.zhimg.com/be6f444c9c8bc03baa8d79cecae40961.jpg",
 //                "http://pic1.zhimg.com/b6f59c017b43937bb85a81f9269b1ae8.jpg",
 //                "http://pic2.zhimg.com/a62f9985cae17fe535a99901db18eba9.jpg"};
-        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4, R.drawable.ex_5, R.drawable.ex_6};
+        int[] imageIds = new int[]{R.drawable.ex_1, R.drawable.ex_2, R.drawable.ex_3, R.drawable.ex_4, R.drawable.ex_1, R.drawable.ex_3};
         String[] titles = {"",
                 "",
                 "",
